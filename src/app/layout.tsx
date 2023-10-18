@@ -1,3 +1,6 @@
+import Head from "next/head";
+import "~/styles/globals.css";
+
 export const metadata = {
   title: "Rodrigo Freitas",
   description: "Personal website of Rodrigo Freitas",
@@ -10,7 +13,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+      </Head>
+      <body className="min-h-screen w-screen">{children}</body>
     </html>
   );
 }
