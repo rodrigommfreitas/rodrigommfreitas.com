@@ -4,11 +4,14 @@ import { sections } from "../data/sections";
 import { motion } from "framer-motion";
 import clsx from "clsx";
 import { type SectionName } from "../types/Section";
+import { useActiveSectionContext } from "~/context/ActiveSectionContext";
 
 const Navbar: FC = () => {
-  const [activeSection, setActiveSection] = useState<SectionName>(
-    sections[0].name,
-  );
+  //const [activeSection, setActiveSection] = useState<SectionName>(
+  //  sections[0].name,
+  //);
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
 
   return (
     <nav className="fixed top-0 z-[999] hidden w-screen justify-center px-64 py-4 text-white sm:flex">
@@ -46,6 +49,7 @@ const Navbar: FC = () => {
               href={section.hash}
               onClick={() => {
                 setActiveSection(section.name);
+                setTimeOfLastClick(Date.now());
               }}
               draggable={false}
             >

@@ -1,10 +1,13 @@
 import type { FC } from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
+import { useSectionInView } from "~/hooks/useSectionInView";
 
 const About: FC = () => {
+  const { ref } = useSectionInView("About");
   return (
     <motion.section
+      ref={ref}
       className="w-[calc(100vw-50px)] max-w-[50rem] text-center text-lg leading-8 text-white/90 sm:text-2xl"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}

@@ -6,10 +6,18 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import portrait from "../../public/portrait.jpg";
+import { useSectionInView } from "~/hooks/useSectionInView";
+import { useActiveSectionContext } from "~/context/ActiveSectionContext";
 
 const Hero: FC = () => {
+  const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
   return (
-    <div className="w-[calc(100vw-50px)] max-w-[50rem] text-center text-white sm:mb-0">
+    <div
+      ref={ref}
+      className="w-[calc(100vw-50px)] max-w-[50rem] text-center text-white sm:mb-0"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -74,8 +82,8 @@ const Hero: FC = () => {
           href="#contact"
           className="group flex w-[268px] items-center justify-center gap-2 rounded-full bg-white px-7 py-3 text-black outline-none transition hover:bg-white/80 active:scale-95 md:w-fit"
           onClick={() => {
-            //setActiveSection("Contact");
-            //setTimeOfLastClick(Date.now());
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
           }}
         >
           Contact me here{" "}

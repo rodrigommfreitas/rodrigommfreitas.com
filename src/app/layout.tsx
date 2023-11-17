@@ -1,4 +1,5 @@
 import Head from "next/head";
+import ActiveSectionContextProvider from "~/context/ActiveSectionContext";
 import "~/styles/globals.css";
 
 export const metadata = {
@@ -17,7 +18,9 @@ export default function RootLayout({
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </Head>
-      <body className="min-h-screen w-screen">{children}</body>
+      <ActiveSectionContextProvider>
+        <body className="min-h-screen w-screen">{children}</body>
+      </ActiveSectionContextProvider>
     </html>
   );
 }
