@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { type SectionName } from "../types/Section";
+import { type SectionName } from "../data/sections";
 
 type SectionsProps = {
   sectionId: SectionName;

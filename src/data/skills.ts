@@ -59,7 +59,7 @@ export const mainSkills = [
     title: "Prisma",
   },
   {
-    title: "SQL Databases",
+    title: "SQL",
     imgName: "devicon-mysql-plain",
   },
   {

@@ -24,3 +24,6 @@ export const sections = [
     hash: "#contact",
   },
 ] as const;
+
+export type SectionName = (typeof sections)[number]["name"];
+export type SectionHash = (typeof sections)[number]["hash"];

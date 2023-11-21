@@ -25,19 +25,19 @@ const Skills = () => {
     <div
       id="skills"
       ref={ref}
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="mb-28 max-w-[50rem] scroll-mt-28 text-center"
     >
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
       ></link>
 
-      <SectionHeading>My skills</SectionHeading>
+      <SectionHeading>Some technologies I{"'"}m proficient with</SectionHeading>
 
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {mainSkills.map((skill, index) => (
           <motion.li
-            className="borderBlack flex items-center gap-2 rounded-xl bg-white px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="flex items-center gap-2 rounded-xl border border-black bg-white/10 px-3 py-2 text-white/80 sm:px-5 sm:py-3"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"

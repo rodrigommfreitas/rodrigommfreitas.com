@@ -12,18 +12,11 @@ export const Project: FC<ProjectProps> = ({
   liveUrl,
 }) => {
   return (
-    <div className="flex h-full max-h-52 flex-col justify-between overflow-hidden rounded-lg border border-black/5 bg-white/10 p-2 text-white  transition hover:bg-white/20 lg:p-4 xl:h-[24rem] xl:max-h-[24rem]">
+    <div className="flex h-full max-h-52 flex-col justify-between overflow-hidden rounded-xl border border-black/5 bg-white/10 p-2 text-white transition hover:bg-white/20 lg:p-4 xl:h-[24rem] xl:max-h-[24rem]">
       <div>
         <span className="flex items-center justify-between gap-4">
           <h3 className="text-xl font-semibold lg:text-2xl">{title}</h3>
           <div className="flex gap-4">
-            <a
-              className="cursor-pointer bg-opacity-80 text-2xl text-white/60 transition hover:text-white/80 active:scale-95"
-              href={repoUrl}
-              target="_blank"
-            >
-              <FaGithubSquare />
-            </a>
             {liveUrl !== "" && (
               <a
                 className="cursor-pointer bg-opacity-80 text-2xl text-white/60 transition hover:text-white/80 active:scale-95"
@@ -33,6 +26,13 @@ export const Project: FC<ProjectProps> = ({
                 <FaEye />
               </a>
             )}
+            <a
+              className="cursor-pointer bg-opacity-80 text-2xl text-white/60 transition hover:text-white/80 active:scale-95"
+              href={repoUrl}
+              target="_blank"
+            >
+              <FaGithubSquare />
+            </a>
           </div>
         </span>
         <p className="mt-2 text-left text-sm leading-relaxed text-white/80 lg:mt-4 lg:text-base">

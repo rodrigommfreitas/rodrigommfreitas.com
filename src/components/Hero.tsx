@@ -93,8 +93,7 @@ const Hero: FC = () => {
         <div className="flex gap-2">
           <a
             className="group flex cursor-pointer items-center justify-center gap-2 rounded-full bg-[#1A1A1A] bg-opacity-80 px-7 py-3 text-white/80 outline-none backdrop-blur-[0.5rem] transition hover:bg-opacity-100 hover:text-white active:scale-95"
-            href="/CV.pdf"
-            download
+            href="./CV - Rodrigo Freitas.pdf"
           >
             View CV{" "}
             <HiDownload className="opacity-60 transition group-hover:translate-y-1" />

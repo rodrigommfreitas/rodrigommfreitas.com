@@ -1,15 +1,11 @@
 import Link from "next/link";
-import { useState, type FC } from "react";
+import { type FC } from "react";
 import { sections } from "../data/sections";
 import { motion } from "framer-motion";
 import clsx from "clsx";
-import { type SectionName } from "../types/Section";
 import { useActiveSectionContext } from "~/context/ActiveSectionContext";
 
 const Navbar: FC = () => {
-  //const [activeSection, setActiveSection] = useState<SectionName>(
-  //  sections[0].name,
-  //);
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
@@ -40,7 +36,7 @@ const Navbar: FC = () => {
           >
             <Link
               className={clsx(
-                "rounded-full px-2 transition hover:text-gray-500",
+                "rounded-full px-2 py-1 transition hover:text-gray-500",
                 {
                   "bg-white text-black hover:text-black":
                     activeSection === section.name,
