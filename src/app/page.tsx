@@ -28,7 +28,7 @@ export default function Home() {
         <Section sectionId={sections[3].name}>
           <Skills />
         </Section>
-        <Section sectionId={sections[4].name}>
+        <Section sectionId={sections[4].name} isScrollable={true}>
           <Experience />
         </Section>
         <Section sectionId={sections[5].name}>

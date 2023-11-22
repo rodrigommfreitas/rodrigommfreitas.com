@@ -24,15 +24,15 @@ export const experiences = [
     title: "Completed The Odin Project's Full Stack Curriculum",
     location: "Remote",
     description:
-      "I completed The Odin Project's Full Stack Curriculum where I acquired a robust understanding of front-end and back-end technologies. The curriculum's hands-on projects allowed me to apply theoretical knowledge in real-world scenarios, fostering a solid skill set in many different languages and frameworks.",
-    icon: React.createElement(CgWorkAlt),
+      "The curriculum's hands-on projects allowed me to apply theoretical knowledge in real-world scenarios, fostering a solid skill set in many different languages and frameworks.",
+    icon: React.createElement(FaReact),
     date: "2021 - 2022",
   },
   {
     title: "Full Stack Web Developer Internship at FreeBalance",
     location: "Lisbon, Portugal",
     description:
-      "This immersive and paid internship was an opportunity where I gained valuable professional experience for 2 months. I developed three distinct full stack applications, leveraging a robust tech stack comprising React, TypeScript, Bootstrap, Java, Spring Boot, and Hibernate. These applications were not only an expression of my technical prowess but also exemplified my ability to quickly adapt to complex frameworks and technologies while delivering high-quality solutions. I also implemented new features for the company's main product, the Government Resource Planning (GRP) software. This was a period of accelerated growth, where I showcased my proficiency in developing robust applications, addressing complex challenges, and contributing meaningfully to a renowned company's technology ecosystem. This experience solidified my commitment to becoming a versatile and impactful developer within the tech industry.",
+      "I gained valuable professional experience for 2 months. I developed three distinct full stack apps, leveraging a robust tech stack comprising React, TypeScript, Bootstrap, Java, Spring Boot, and Hibernate. I also implemented new features for the company's main product.",
     icon: React.createElement(CgWorkAlt),
     date: "July 2023 - August 2023",
   },

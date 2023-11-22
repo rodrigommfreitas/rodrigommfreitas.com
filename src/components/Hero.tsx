@@ -8,6 +8,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import portrait from "../../public/portrait.jpg";
 import { useSectionInView } from "~/hooks/useSectionInView";
 import { useActiveSectionContext } from "~/context/ActiveSectionContext";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
 const Hero: FC = () => {
   const { ref } = useSectionInView("Home", 0.5);
@@ -92,13 +93,18 @@ const Hero: FC = () => {
 
         <div className="flex gap-2">
           <a
+            data-tooltip-id="cv-tooltip"
             className="group flex cursor-pointer items-center justify-center gap-2 rounded-full bg-[#1A1A1A] bg-opacity-80 px-7 py-3 text-white/80 outline-none backdrop-blur-[0.5rem] transition hover:bg-opacity-100 hover:text-white active:scale-95"
             href="./CV - Rodrigo Freitas.pdf"
           >
             View CV{" "}
             <HiDownload className="opacity-60 transition group-hover:translate-y-1" />
           </a>
-
+          <ReactTooltip
+            id="cv-tooltip"
+            place="bottom"
+            content="My phone number is censored because of security reasons."
+          />
           <a
             className="flex cursor-pointer items-center gap-2 rounded-full bg-[#1A1A1A] bg-opacity-80 p-4 text-white/60 backdrop-blur-[0.5rem] transition hover:bg-opacity-100 hover:text-white/80 active:scale-95"
             href="https://www.linkedin.com/in/rodrigommfreitas/"
