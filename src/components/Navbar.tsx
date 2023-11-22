@@ -24,6 +24,43 @@ const Navbar: FC = () => {
       >
         {sections.map((section) => (
           <motion.li
+            className="relative flex h-3/4 items-center justify-center"
+            key={section.hash}
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+          >
+            <Link
+              className={clsx(
+                "flex w-full items-center justify-center px-3 py-1 transition hover:text-white ",
+                {
+                  "z-10 text-black hover:text-black":
+                    activeSection === section.name,
+                },
+              )}
+              href={section.hash}
+              onClick={() => {
+                setActiveSection(section.name);
+                setTimeOfLastClick(Date.now());
+              }}
+            >
+              {section.name}
+
+              {section.name === activeSection && (
+                <motion.span
+                  className="absolute inset-0 -z-10 rounded-full bg-white"
+                  layoutId="activeSection"
+                  transition={{
+                    type: "spring",
+                    stiffness: 380,
+                    damping: 30,
+                  }}
+                ></motion.span>
+              )}
+            </Link>
+          </motion.li>
+        ))}
+        {/*sections.map((section) => (
+          <motion.li
             key={section.hash}
             initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -52,55 +89,10 @@ const Navbar: FC = () => {
               {section.name}
             </Link>
           </motion.li>
-        ))}
+            ))*/}
       </motion.ul>
     </nav>
   );
 };
 
 export default Navbar;
-
-/*
-        <Link
-          href={sections[0].hash}
-          className="rounded-full bg-white px-2 text-black"
-          draggable={false}
-        >
-          {sections[0].name}
-        </Link>
-        <Link
-          href={sections[1].hash}
-          className="px-2 text-white"
-          draggable={false}
-        >
-          {sections[1].name}
-        </Link>
-        <Link
-          href={sections[2].hash}
-          className="px-2 text-white"
-          draggable={false}
-        >
-          {sections[2].name}
-        </Link>
-        <Link
-          href={sections[3].hash}
-          className="px-2 text-white"
-          draggable={false}
-        >
-          {sections[3].name}
-        </Link>
-        <Link
-          href={sections[4].hash}
-          className="px-2 text-white"
-          draggable={false}
-        >
-          {sections[4].name}
-        </Link>
-        <Link
-          href={sections[5].hash}
-          className="px-2 text-white"
-          draggable={false}
-        >
-          {sections[5].name}
-        </Link>
-*/

@@ -32,11 +32,11 @@ const Hero: FC = () => {
             <Image
               src={portrait}
               alt="Rodrigo portrait"
-              width="192"
+              width="248"
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
+              className="h-24 w-24 rounded-full border-[0.2rem] border-white/75 object-cover shadow-xl sm:h-32 sm:w-32"
               draggable={false}
             />
           </motion.div>
