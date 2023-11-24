@@ -12,7 +12,7 @@ const Navbar: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   return (
-    <nav className="fixed top-0 z-[999] flex w-screen justify-center py-4 text-white sm:px-64">
+    <nav className="fixed top-0 z-[999] flex w-screen px-4 py-4 text-white sm:justify-center sm:px-64">
       <div className="block sm:hidden">
         <button
           type="button"
