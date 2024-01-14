@@ -4,6 +4,7 @@ import { sections } from "../data/sections";
 import { motion } from "framer-motion";
 import clsx from "clsx";
 import { HiMenu } from "react-icons/hi";
+import { AiOutlineClose } from "react-icons/ai";
 import { useActiveSectionContext } from "~/context/ActiveSectionContext";
 
 const Navbar: FC = () => {
@@ -19,7 +20,11 @@ const Navbar: FC = () => {
           className="text-white-900 inline-flex items-center gap-x-1 text-sm font-semibold leading-6"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          <HiMenu className="text-3xl" />
+          {isMenuOpen ? (
+            <AiOutlineClose className="text-3xl" />
+          ) : (
+            <HiMenu className="text-3xl" />
+          )}
         </button>
         {isMenuOpen && (
           <div className="absolute left-1/2 z-10 mt-5 flex w-screen max-w-max -translate-x-1/2 px-4">

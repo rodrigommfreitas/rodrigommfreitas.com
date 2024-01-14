@@ -13,7 +13,7 @@ const Section: FC<SectionsProps> = ({ sectionId, children, isScrollable }) => {
     <div
       id={sectionId.toLocaleLowerCase()}
       className={clsx(
-        "flex min-h-screen w-screen snap-center items-center justify-center",
+        "flex min-h-screen w-screen snap-start items-center justify-center",
         {
           "snap-always overflow-y-scroll": isScrollable,
         },
