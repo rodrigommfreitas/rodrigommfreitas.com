@@ -18,7 +18,7 @@ export async function Skill({ title }: SkillProps) {
         width={24}
         height={24}
         alt={title + " logo"}
-        className={`ml-3 h-6 w-6 rounded-md ${skillsToInvert.includes(title) ? "invert filter" : ""}`}
+        className={`ml-3 h-6 w-6 rounded-md ${skillsToInvert.includes(title) ? "dark:invert dark:filter" : ""}`}
       />
     </li>
   );
