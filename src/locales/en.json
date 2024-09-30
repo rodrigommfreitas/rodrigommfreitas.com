@@ -2,6 +2,14 @@
   "metadata": {
     "description": "Developer, writer and entrepreneur"
   },
+  "metadata-about": {
+    "title": "About Rodrigo Freitas",
+    "description": "Learn more about Rodrigo Freitas, a developer, writer and entrepreneur."
+  },
+  "metadata-blog": {
+    "title": "Rodrigo Freitas' Blog",
+    "description": "Read articles on web development, freelancing, and entrepreneurship written by Rodrigo Freitas."
+  },
   "hero": {
     "description": "Full Stack Web Developer & Freelancer"
   },
@@ -10,13 +18,13 @@
     "contact-me": "Contact Me"
   },
   "about-section": {
-    "title": "About Me",
+    "title": "About me",
     "description": "I'm a developer, freelancer and lifelong learner based in Portugal. I specialize in building custom solutions that are fast, responsive, and user-friendly. Whether it's a landing page or a complex application, I help businesses turn ideas into reality.",
     "learn-more": "Learn More"
   },
   "services": {
     "title": "What",
-    "title-gradient": "I Offer"
+    "title-gradient": "I offer"
   },
   "services-items": {
     "item-1-title": "Custom Web Development",
@@ -169,6 +177,12 @@
     "timeline-4-date": "2024 - Present",
     "timeline-4-title": "Freelance Full Stack Developer",
     "timeline-4-description": "Started freelancing as a Full Stack Developer. I've worked on a variety of projects, from simple landing pages to complex web applications. I've helped clients turn their ideas into reality and achieve their business goals."
+  },
+
+  "blog": {
+    "title": "Welcome to my",
+    "title-gradient": "blog",
+    "description": "All my articles are written in English."
   },
 
   "privacy-policy": {

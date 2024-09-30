@@ -23,7 +23,7 @@ export default async function BlogPost({ params }: Props) {
   return (
     <article className="post pt-32">
       <div className="mb-12">
-        <h1 className="blue-gradient !mb-1 w-fit !text-5xl !font-black">
+        <h1 className="blue-gradient !mb-1 w-fit !text-4xl !font-black sm:!text-5xl">
           {frontmatter.title}
         </h1>
         <time className="text-color text-sm">{frontmatter.date}</time>
@@ -37,7 +37,7 @@ export default async function BlogPost({ params }: Props) {
               [
                 rehypePrettyCode,
                 {
-                  theme: "github-dark",
+                  theme: "catppuccin-mocha",
                 },
               ],
             ],

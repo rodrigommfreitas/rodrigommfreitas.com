@@ -1,6 +1,17 @@
-export const metadata = {
-  title: "About",
-  description: "Personal information about me.",
+"use server";
+
+import { getLocale, getTranslations } from "next-intl/server";
+
+export const generateMetadata = async () => {
+  const locale = getLocale();
+
+  const t = await getTranslations("metadata-about");
+
+  return {
+    title: t("title"),
+    description: t("description"),
+    locale: locale,
+  };
 };
 
 export default async function AboutLayout({

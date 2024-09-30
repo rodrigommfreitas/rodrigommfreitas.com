@@ -4,10 +4,6 @@ import { getHeroData } from "@/src/data/home/hero";
 
 import { HeroButtons } from "./hero-buttons";
 
-interface HeroProps {
-  title: string;
-}
-
 export async function Hero() {
   const data = await getHeroData();
 
@@ -16,7 +12,7 @@ export async function Hero() {
       id="home"
       className="relative flex flex-col items-center justify-center space-y-2 bg-zinc-50 py-32 bg-grid-black/[0.1] dark:bg-black dark:bg-grid-white/[0.15] sm:space-y-6 sm:py-64"
     >
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-zinc-50 [mask-image:radial-gradient(ellipse_at_center,transparent_35%,black)] dark:bg-black sm:[mask-image:radial-gradient(ellipse_at_center,transparent_10%,black)]"></div>
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-zinc-50 [mask-image:radial-gradient(ellipse_at_center,transparent_5%,black)] dark:bg-black"></div>
       <h1 className="black-gradient z-10 text-center text-5xl font-bold sm:text-7xl md:text-9xl">
         {data.title}
       </h1>

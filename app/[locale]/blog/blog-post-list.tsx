@@ -1,7 +1,7 @@
 "use server";
 
+import { Link } from "@/src/i18n/routing";
 import { getAllPostsFrontmatter } from "@/src/utils/mdx";
-import Link from "next/link";
 
 export async function BlogPostList() {
   const posts = getAllPostsFrontmatter();

@@ -2,6 +2,14 @@
   "metadata": {
     "description": "Desenvolvedor, escritor e empreendedor"
   },
+  "metadata-about": {
+    "title": "Sobre",
+    "description": "Aprenda mais sobre Rodrigo Freitas, um desenvolvedor, escritor e empreendedor."
+  },
+  "metadata-blog": {
+    "title": "Blog",
+    "description": "Leia os artigos mais recentes de Rodrigo Freitas sobre desenvolvimento web, freelancing, empreendedorismo e muito mais."
+  },
   "hero": {
     "description": "Desenvolvedor Web Full Stack & Freelancer"
   },
@@ -169,6 +177,12 @@
     "timeline-4-date": "2024 - Presente",
     "timeline-4-title": "Freelance Full Stack Developer",
     "timeline-4-description": "Comecei a fazer freelancing como desenvolvedor Full Stack. Trabalhei em diversos projetos, desde landing pages simples até aplicações web complexas. Ajudei clientes a transformar as suas ideias em realidade e a atingir os seus objetivos de negócio."
+  },
+
+  "blog": {
+    "title": "Bem-vindo ao meu",
+    "title-gradient": "blog",
+    "description": "Todos os meus artigos são escritos em inglês."
   },
 
   "privacy-policy": {

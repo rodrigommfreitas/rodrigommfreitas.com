@@ -1,0 +1,68 @@
+---
+title: How I Built My Personal Website
+date: 2024-09-30
+description: A look at the thought process and tools behind building my personal website, and how they come together to create a dynamic, performant experience.
+---
+
+When I set out to build my personal website, I knew it wasn’t just about creating an online portfolio or blog. It was about crafting a digital space that reflected not only my skills but also the tools and technologies I enjoy working with. A personal website can serve as both a canvas and a playground—it needs to be polished, performant, and scalable, but also something I can tinker with over time.
+
+Here’s how I approached it.
+
+## The Power of Next.js
+
+I started with **Next.js**, a framework I keep coming back to for its flexibility and out-of-the-box performance benefits.
+The **App Router** in Next.js gives me the perfect blend of server-side and client-side rendering, which is essential for a website like mine.
+Some parts, like the blog, need to be static for speed, while others need to be dynamic.
+Next.js makes this balance easy without overcomplicating the development process.
+
+Another reason for choosing Next.js is its commitment to **SEO** and performance optimizations.
+For personal sites, SEO is often an afterthought, but it’s something I wanted to get right from the start.
+With Next.js handling dynamic meta tags, automatic sitemaps, and image optimization, I didn’t have to worry about those details.
+The framework took care of the technical SEO that drives organic traffic without me having to dive deep into it.
+
+## Keeping Things Maintainable with TypeScript
+
+When working on a project you plan to maintain over time, **TypeScript** feels like an essential tool.
+TypeScript acts as a guardrail, keeping my codebase clean and helping me avoid subtle bugs before they even make it into production.
+
+It helps keep everything maintainable, especially as the site grows and I add more features.
+
+## Styling with Tailwind CSS
+
+One of my goals with the website was to make it clean and minimal without sacrificing flexibility.
+I didn’t want to spend hours fine-tuning CSS files or worrying about layout details.
+That’s why I chose **Tailwind CSS** as my styling framework.
+Tailwind’s utility-first approach means I can build responsive, accessible layouts directly in my JSX, without the need to jump back and forth between CSS and JavaScript.
+
+Tailwind also scales well with design complexity.
+Using **Tailwind CSS components from Aceternity UI**, I could drop in some pre-built, well-styled components that just add an extra flavor to the site's appearance. Customization was quick, and I could focus on the parts of the design that mattered most to me.
+
+## Light and Dark Mode
+
+With the rise of **dark mode** across platforms, it felt like a must-have for my site. I wanted users to have a choice based on their preference, and implementing it with **next-themes** was a breeze. It detects the user’s system preference and applies the corresponding theme without any noticeable delay. It’s one of those features that you almost don’t notice until it’s missing—but once it’s there, it adds a layer of personalization that makes the website feel more modern and thoughtful.
+
+## A Bigger Audience with Multi-language Support
+
+When building a personal website, it’s easy to focus only on your local audience, but I wanted to make my content accessible to a broader, international community.
+Integrating **next-intl** gave me the ability to handle translations in a seamless way. Now, I can serve content in multiple languages without having to rewrite the entire structure of the site.
+This not only expands my reach but also makes my site more inclusive.
+
+## A Dynamic Blog with MDX
+
+Writing content is one thing, but I didn’t want to limit myself to static text posts.
+That’s why I chose **MDX-Remote** for my blog.
+MDX allows me to write posts in Markdown while still being able to drop in React components wherever necessary.
+This way, I can include dynamic elements—like interactive buttons, forms, or even charts—directly within blog posts.
+It bridges the gap between static content and interactivity, making the blog section of my site more than just a static list of articles.
+
+## Tying It All Together
+
+At the end of the day, the tools I chose for my personal website aren’t just about ticking boxes or using the latest tech.
+They’re about creating a space that reflects both who I am as a developer and the kind of experiences I want to provide to visitors.
+**Next.js**, **TypeScript**, **Tailwind**, **MDX**, and all the other technologies work together to build a fast, modern, and maintainable site that’s easy to iterate on.
+
+The beauty of this setup is that it doesn’t feel bloated.
+Each tool serves a specific purpose, and they all come together in a way that makes the website perform well, look polished, and feel engaging.
+And since it’s built with future growth in mind, I can keep evolving the site as I go—whether that’s adding new content, improving the design, or experimenting with even more tools.
+
+That’s what makes building a personal website so exciting—it’s never really done.
