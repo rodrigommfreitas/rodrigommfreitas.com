@@ -19,6 +19,7 @@ export function Services() {
       <motion.img
         src="/landing/custom-web-development.jpg"
         className="h-full w-full flex-col rounded-xl"
+        alt="Custom Web Development"
       />
     );
   };
@@ -69,6 +70,7 @@ export function Services() {
       <motion.img
         src="/landing/ux-ui.jpg"
         className="h-full w-full flex-col rounded-xl"
+        alt="UX/UI Design"
       />
     );
   };
@@ -176,7 +178,7 @@ export function Services() {
         >
           <Image
             src="/landing/client-portrait.jpg"
-            alt="avatar"
+            alt="Client's Portrait"
             height="100"
             width="100"
             className="h-6 w-6 flex-shrink-0 rounded-full object-cover object-top"
@@ -194,7 +196,7 @@ export function Services() {
           </p>
           <Image
             src="/landing/portrait.jpg"
-            alt="avatar"
+            alt="Rodrigo's Portrait"
             height="100"
             width="100"
             className="h-6 w-6 flex-shrink-0 rounded-full"
@@ -209,6 +211,7 @@ export function Services() {
       <motion.img
         src="/landing/consultation.jpg"
         className="h-full w-full flex-col rounded-xl"
+        alt="Consultation"
       />
     );
   };
@@ -218,6 +221,7 @@ export function Services() {
       <motion.img
         src="/landing/handshake.jpg"
         className="h-full w-full flex-col rounded-xl"
+        alt="Handshake"
       />
     );
   };

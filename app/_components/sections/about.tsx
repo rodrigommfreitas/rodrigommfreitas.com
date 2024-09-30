@@ -11,7 +11,7 @@ export default async function About() {
     <div className="flex flex-col items-center gap-4 md:flex-row md:gap-8">
       <Image
         src="/landing/me.jpg"
-        alt="Rodrigo Freitas"
+        alt="Rodrigo Freitas' Photo"
         width={240}
         height={240}
         className="mb-2 max-h-[200px] max-w-[200px] rounded-full shadow-lg shadow-black/30 md:mb-0 md:max-h-[240px] md:max-w-[240px] md:object-none"
