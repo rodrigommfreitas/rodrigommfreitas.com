@@ -62,6 +62,9 @@ html {
   .blue-gradient {
     @apply !bg-gradient-to-r !from-sky-600 !via-blue-600 !to-blue-400 !bg-clip-text !text-transparent dark:!from-blue-300 dark:!to-sky-600;
   }
+  .black-gradient {
+    @apply !bg-gradient-to-t !from-black !via-neutral-800 !to-zinc-600 !bg-clip-text !text-transparent dark:!from-white dark:!via-neutral-200 dark:!to-neutral-500;
+  }
   .text-color {
     @apply text-black/80 dark:text-white/80;
   }
