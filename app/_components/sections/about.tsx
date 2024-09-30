@@ -1,9 +1,12 @@
 "use server";
 
+import { getAboutSectionData } from "@/src/data/home/about";
+import { Link as LocalizedLink } from "@/src/i18n/routing";
 import Image from "next/image";
-import Link from "next/link";
 
 export default async function About() {
+  const data = await getAboutSectionData();
+
   return (
     <div className="flex flex-col items-center gap-4 md:flex-row md:gap-8">
       <Image
@@ -15,18 +18,16 @@ export default async function About() {
       />
 
       <div className="flex flex-col items-center text-center md:items-start md:text-left">
-        <h2 className="heading">About Me</h2>
+        <h2 className="heading">{data.title}</h2>
         <div className="mx-auto mb-4 mt-2 h-1 w-20 rounded-full bg-gradient-to-r from-blue-500 via-blue-300 dark:to-black md:mx-0"></div>
 
         <p className="text-color mb-4 max-w-[600px] text-lg sm:text-xl">
-          I&apos;m a developer, freelancer and lifelong learner based in
-          Portugal. I specialize in building custom solutions that are fast,
-          responsive, and user-friendly. Whether it&apos;s a landing page or a
-          complex application, I help businesses turn ideas into reality.
+          {data.description}
         </p>
-        <Link href="/about" className="cta-contrast">
-          Learn More About Me
-        </Link>
+
+        <LocalizedLink href="/about" className="cta-contrast">
+          {data.learnMore}
+        </LocalizedLink>
       </div>
     </div>
   );

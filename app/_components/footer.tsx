@@ -1,9 +1,29 @@
 "use server";
 
-import { navItems } from "@/src/data/nav-items";
+import { Link as LocalizedLink } from "@/src/i18n/routing";
+import { getLocale, getTranslations } from "next-intl/server";
 import Link from "next/link";
 
 export async function Footer() {
+  const locale = await getLocale();
+  const navT = await getTranslations("nav");
+  const footerT = await getTranslations("footer");
+
+  const navItems = {
+    "/": {
+      name: navT("home"),
+    },
+    "/about": {
+      name: navT("about"),
+    },
+    //"/portfolio": {
+    // name: t("portfolio"),
+    //},
+    //"/blog": {
+    // name: t("blog"),
+    // },
+  };
+
   return (
     <footer className="border-t bg-zinc-50 dark:border-white/[0.2] dark:bg-black">
       <div className="mx-auto max-w-5xl space-y-8 px-4 py-8 sm:px-6 lg:space-y-8 lg:px-8">
@@ -62,38 +82,38 @@ export async function Footer() {
 
           <div className="grid grid-cols-1 gap-8 lg:col-span-2 lg:grid-cols-3">
             <div>
-              <p className="text-lg font-medium">Pages</p>
+              <p className="text-lg font-medium">{footerT("pages")}</p>
 
               <ul className="mt-6 space-y-4">
                 {Object.entries(navItems).map(([path, { name }]) => (
                   <li key={path}>
-                    <Link
+                    <LocalizedLink
                       href={path}
                       className="text-color transition hover:opacity-75"
                     >
                       {name}
-                    </Link>
+                    </LocalizedLink>
                   </li>
                 ))}
               </ul>
             </div>
 
             <div>
-              <p className="text-lg font-medium">Helpful Links</p>
+              <p className="text-lg font-medium">{footerT("helpful-links")}</p>
 
               <ul className="mt-6 space-y-4">
                 <li>
                   <Link
-                    href="/#contact"
+                    href={`/${locale}#contact`}
                     className="text-color transition hover:opacity-75"
                   >
-                    Contact
+                    {footerT("contact")}
                   </Link>
                 </li>
 
                 <li>
                   <Link
-                    href="/#faq"
+                    href={`/${locale}#faq`}
                     className="text-color transition hover:opacity-75"
                   >
                     FAQ
@@ -107,38 +127,36 @@ export async function Footer() {
 
               <ul className="mt-6 space-y-4">
                 <li>
-                  <Link
+                  <LocalizedLink
                     href="/legal/privacy-policy"
                     className="text-color transition hover:opacity-75"
                   >
-                    Privacy Policy
-                  </Link>
+                    {footerT("privacy-policy")}
+                  </LocalizedLink>
                 </li>
 
                 <li>
-                  <Link
+                  <LocalizedLink
                     href="/legal/terms-of-service"
                     className="text-color transition hover:opacity-75"
                   >
-                    Terms of Service
-                  </Link>
+                    {footerT("terms-of-service")}
+                  </LocalizedLink>
                 </li>
                 <li>
-                  <Link
+                  <LocalizedLink
                     href="/legal/cookie-policy"
                     className="text-color transition hover:opacity-75"
                   >
-                    Cookie Policy
-                  </Link>
+                    {footerT("cookie-policy")}
+                  </LocalizedLink>
                 </li>
               </ul>
             </div>
           </div>
         </div>
         <div className="mx-auto h-[1px] w-1/2 bg-neutral-300 dark:bg-white/[0.2]" />
-        <p className="text-color text-center">
-          &copy; 2024 Rodrigo Freitas. All rights reserved.
-        </p>
+        <p className="text-color text-center">&copy; {footerT("end")}</p>
       </div>
     </footer>
   );

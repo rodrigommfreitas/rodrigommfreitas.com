@@ -1,9 +1,12 @@
 "use client";
 
 import { CheckIcon, CopyIcon, MailIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 import React, { useCallback, useState } from "react";
 
 export function CopyEmailButton({ email = "rodrigommfreitas@protonmail.com" }) {
+  const t = useTranslations("final-cta");
+
   const [copied, setCopied] = useState(false);
 
   const handleCopy = useCallback(() => {
@@ -23,25 +26,25 @@ export function CopyEmailButton({ email = "rodrigommfreitas@protonmail.com" }) {
       </p>
       <div className="flex justify-center gap-8">
         {copied ? (
-          <button className="cta flex !w-full items-center justify-center gap-2">
+          <button className="cta flex !w-full items-center justify-center gap-2 !px-2 sm:!px-6">
             <CheckIcon className="h-4 w-4" />
-            <span>Copied!</span>
+            <span>{t("copied")}</span>
           </button>
         ) : (
           <button
             onClick={handleCopy}
-            className="cta flex !w-full items-center justify-center gap-2"
+            className="cta flex !w-full items-center justify-center gap-2 !px-2 sm:!px-6"
           >
             <CopyIcon className="h-4 w-4" />
-            <span>Copy</span>
+            <span>{t("copy")}</span>
           </button>
         )}
         <button
           onClick={handleEmail}
-          className="cta-contrast flex !w-full items-center justify-center gap-2"
+          className="cta-contrast sm!:px-6 flex !w-full items-center justify-center gap-2 !px-2"
         >
           <MailIcon className="h-4 w-4" />
-          <span>Mail</span>
+          <span>{t("email")}</span>
         </button>
       </div>
     </div>

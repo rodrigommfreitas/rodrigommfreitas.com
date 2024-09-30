@@ -18,7 +18,7 @@ export default function ThemeToggle() {
     return (
       <button
         aria-label="Toggle Light/Dark Mode"
-        className="rounded-full p-[6px] transition-all"
+        className="flex h-8 w-8 items-center justify-center transition-all"
       >
         <MoonIcon className="h-5 w-5" />
       </button>
@@ -28,7 +28,7 @@ export default function ThemeToggle() {
     <button
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       aria-label="Toggle Light/Dark Mode"
-      className="rounded-full p-[6px] transition-all"
+      className="flex h-8 w-8 items-center justify-center sm:!ml-2"
     >
       {theme === "light" ? (
         <MoonIcon className="h-5 w-5" />

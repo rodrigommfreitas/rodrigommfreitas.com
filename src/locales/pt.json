@@ -1,0 +1,224 @@
+{
+  "hero": {
+    "description": "Desenvolvedor Web Full Stack & Freelancer"
+  },
+  "hero-buttons": {
+    "view-my-work": "Conheça o Meu Trabalho",
+    "contact-me": "Contacte-me"
+  },
+  "about-section": {
+    "title": "Sobre mim",
+    "description": "Sou um desenvolvedor, freelancer e aprendiz da vida, localizado em Portugal. Especializo-me em criar soluções personalizadas que sejam rápidas, responsivas e fáceis de usar. Seja uma landing page ou uma aplicação complexa, ajudo negócios a transformar ideias em realidade.",
+    "learn-more": "Saiba mais"
+  },
+  "services": {
+    "title": "O que",
+    "title-gradient": "eu ofereço"
+  },
+  "services-items": {
+    "item-1-title": "Desenvolvimento Web Personalizado",
+    "item-1-description": "Desenvolvo sites personalizados de acordo com as suas necessidades.",
+    "item-2-title": "UX/UI Design",
+    "item-2-description": "Eu desenho interfaces bonitas e fáceis de usar, compatíveis com todos os dispositivos.",
+    "item-3-title": "Hospedagem Web",
+    "item-3-description": "Hospedo o seu site num servidor seguro e rápido, garantido a melhor experiência para os visitantes.",
+    "item-4-title": "Otimização de Mecanismos de Pesquisa (SEO)",
+    "item-4-description": "Otimizo o seu site para mecanismos de pesquisa de forma a aumentar a sua visibilidade.",
+    "item-5-title": "Desenvolvimento e Suporte Contínuos",
+    "item-5-description": "Estou à disposição para expandir e dar suporte ao seu projeto.",
+    "item-6-title": "Consultoria e Estratégia",
+    "item-6-description": "Ofereço consultoria para ajudá-lo a atingir os seus objetivos de negócio.",
+    "item-7-title": "Competitive Pricing",
+    "item-7-description": "I offer fair and competitive prices for my services. Each project is unique and so are quotes."
+  },
+  "services-skeleton-items": {
+    "skeleton-4-title-1": "Servidor",
+    "skeleton-4-description-1": "Hospedagem segura e fiável",
+    "skeleton-4-title-2": "Domínio",
+    "skeleton-4-description-2": "Nome personalizado para o site",
+    "skeleton-4-title-3": "Backups",
+    "skeleton-4-description-3": "Mantém os teus dados seguros",
+
+    "skeleton-5-text-1": "Olá, podes implementar esta funcionalidade?",
+    "skeleton-5-text-2": "Claro, vou fazê-lo",
+
+    "skeleton-8-title": "Precisa de uma solução personalizada?",
+    "skeleton-8-description": "Cada projeto é único. Estou aqui para ajudá-lo a dar vida à sua visão. Vamos discutir as suas ideias!",
+    "skeleton-8-cta": "Entre em Contacto"
+  },
+  "process": {
+    "title": "O meu",
+    "title-gradient": "processo",
+
+    "step-1-title": "1. Descoberta e Planeamento",
+    "step-1-description": "Colaboraremos para percebermos os seus objetivos, público-alvo e principais funcionalidades. Discutiremos coisas como estrutura da aplicação, navegação e requisitos de conteúdo.",
+
+    "step-2-title": "2. Design e Prototipagem",
+    "step-2-description": "Criarei um protótipo de design que se alinhe com o que discutimos na fase anterior. Isto permitirá que tenha uma ideia clara do aspeto futuro do projeto.",
+
+    "step-3-title": "3. Feedback e Iteração",
+    "step-3-description": "Iremos rever o protótipo e fornecerá feedback. Iteraremos no design até que você esteja satisfeito, garantindo que o produto final vá de encontro com as suas expectativas.",
+
+    "step-4-title": "4. Desenvolvimento",
+    "step-4-description": "Construirei a aplicação usando tecnologias modernas, garantindo que seja rápido, seguro e escalável. Vou mantê-lo atualizado sobre o progresso.",
+
+    "step-5-title": "5. Testes e Otimização",
+    "step-5-description": "Testarei a aplicação para garantir que não existam bugs e tenha bom desempenho, garantindo uma experiência de utilizador perfeita.",
+
+    "step-6-title": "6. Lançamento e Entrega",
+    "step-6-description": "Quando tudo estiver perfeito, lançarei/entregarei o seu projeto e fornecerei todas as informações necessárias para gerenciá-lo."
+  },
+  "examples": {
+    "title": "Exemplos do que",
+    "title-gradient": "eu posso fazer",
+
+    "example-1-title": "Landing Pages e Portfólio",
+    "example-1-description": "Represente a sua marca e mostre o seu trabalho. Atraia novos clientes online e cause uma ótima primeira impressão.",
+
+    "example-2-title": "Blogs",
+    "example-2-description": "Gerencie facilmente o seu blog com um Sistema de Gerenciamento de Conteúdo (CMS) para que você possa se concentrar em escrever e publicar sem preocupações.",
+
+    "example-3-title": "Painéis e Sistemas de Gerenciamento",
+    "example-3-description": "Tenha um sistema que o ajude a gerir o seu negócio, totalmente adaptado às suas necessidades.",
+
+    "example-4-title": "Plataformas de Ensino",
+    "example-4-description": "Tenha uma plataforma online onde você possa ajudar outras pessoas a aprender por meio de seu conhecimento e experiência.",
+
+    "example-5-title": "Aplicações Personalizadas",
+    "example-5-description": "Posso construir uma aplicação personalizada que resolva algum problema específico ou ajude você a atingir um objetivo.",
+
+    "example-6-title": "E muito mais",
+    "example-6-description": "Tem um projeto mais complexo em mente? Vamos discutir e ver como posso ajudá-lo."
+  },
+  "faq": {
+    "title": "Perguntas",
+    "title-gradient": "frequentes",
+
+    "faq-1-q": "Como posso começar um projeto?",
+    "faq-1-a": "Pode começar um projeto enviando-me um email. Entrarei em contato o mais breve possível para discutir o seu projeto.",
+
+    "faq-2-q": "Qual é o custo dos seus serviços?",
+    "faq-2-a": "O custo dos meus serviços depende da complexidade do projeto. Eu ofereço uma consulta gratuita para discutir o seu projeto e fornecer um orçamento.",
+
+    "faq-3-q": "Quanto tempo leva para concluir um projeto?",
+    "faq-3-a": "O tempo que leva para concluir um projeto depende da escala e da complexidade do projeto. Forneço um cronograma estimado durante a fase de planeamento.",
+
+    "faq-4-q": "Oferece suporte após a conclusão do projeto?",
+    "faq-4-a": "Sim, ofereço suporte após a conclusão do projeto. Se tiver algum problema ou dúvida, estou disponível para ajudá-lo.",
+
+    "faq-5-q": "Pode ajudar-me a melhorar o meu site existente?",
+    "faq-5-a": "Sim, posso ajudá-lo a melhorar o seu site já existente. Se precisa de uma reformulação, de novos recursos ou de otimização, estou aqui para ajudar."
+  },
+  "final-cta": {
+    "title": "Pronto para levar",
+    "title-gradient": "a sua",
+    "title-rest": "presença digital para o próximo nível?",
+    "description": "Envie-me um email hoje e vamos discutir como posso ajudá-lo a atingir os seus objetivos!",
+    "copy": "Copiar Email",
+    "copied": "Copiado!",
+    "email": "Enviar Email"
+  },
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "services": "Portfólio",
+    "blog": "Blog",
+    "contact": "Contacte-me"
+  },
+  "footer": {
+    "pages": "Páginas",
+    "helpful-links": "Links Úteis",
+    "contact": "Contacto",
+    "privacy-policy": "Política de Privacidade",
+    "terms-of-service": "Termos de Serviço",
+    "cookie-policy": "Política de Cookies",
+    "end": "2024 Rodrigo Freitas. Todos os direitos reservados."
+  },
+  "about-page": {
+    "title": "Sobre mim",
+    "text-1": "A minha caminhada na programação começou quando eu ainda era criança. Sempre fui fascinado pela tecnologia e curioso sobre como as coisas funcionam. Gostei da ideia de criar algo apartir do nada. Foi durante esta idade que fiz o meu primeiro programa, era uma aplicação simples escrita em Visual Basic com algum texto e uma imagem, desde aquele dia soube que queria ser engenheiro de software.",
+    "text-2": " Atualmente, tenho programado e construído coisas por mais de 3 anos e trabalhado com uma variedade de tecnologias. O meu foco principal é desenvolvimento web mas possuo amplo conhecimento em outras áreas.",
+
+    "timeline-title": "Cronologia da",
+    "timeline-title-gradient": "minha caminhada",
+
+    "tech-title": "Tecnologias que",
+    "tech-title-gradient": "sei usar",
+    "skill-title-1": "Linguagens",
+    "skill-title-2": "Frameworks, Bibliotecas, Servidores",
+    "skill-title-3": "Estilização",
+    "skill-title-4": "Bases de Dados",
+    "skill-title-5": "Testes",
+    "skill-title-6": "Outros",
+
+    "timeline-1-date": "2021 - Presente",
+    "timeline-1-title": "Licenciatura em Engenharia Informática na Universidade da Madeira.",
+    "timeline-1-description": "Iniciei a minha licenciatura em Engenharia Informática na Universidade da Madeira. Aprendi muito sobre computação, matemática e engenharia de software.",
+
+    "timeline-2-date": "2022",
+    "timeline-2-title": "Currículo Full Stack JavaScript do The Odin Project",
+    "timeline-2-description": "Concluí o currículo Full Stack JavaScript do The Odin Project, que cobre os fundamentos do desenvolvimento web, incluindo HTML, CSS, JavaScript e Node.js.",
+
+    "timeline-3-date": "Verão 2023",
+    "timeline-3-title": "Full Stack Web Developer - Estágio Profissional na FreeBalance",
+    "timeline-3-description": "Estagiei na FreeBalance como Full Stack Web Developer. Trabalhei em projetos do mundo real e ganhei experiência em um ambiente profissional. Construí três projetos diferentes com React, TypeScript, Bootstrap e Java Spring Boot.",
+
+    "timeline-4-date": "2024 - Presente",
+    "timeline-4-title": "Freelance Full Stack Developer",
+    "timeline-4-description": "Comecei a fazer freelancing como desenvolvedor Full Stack. Trabalhei em diversos projetos, desde landing pages simples até aplicações web complexas. Ajudei clientes a transformar as suas ideias em realidade e a atingir os seus objetivos de negócio."
+  },
+
+  "privacy-policy": {
+    "title": "Política de Privacidade",
+    "last-updated": "Última atualização: 18 de setembro, 2024",
+    "item-1-title": "1. Quais Dados são Coletados",
+    "item-1-content": "Os únicos dados armazenados no seu dispositivo são a sua preferência de tema (modo claro ou escuro) e a sua preferência de idioma (inglês ou português). Essas informações são salvas localmente no seu navegador usando armazenamento local e cookies e são usadas exclusivamente para lembrar o seu tema e opções de idioma quando você revisita o Site.",
+    "item-2-title": "2. Quais Dados NÃO são Coletados",
+    "item-2-content": "Este Site não coleta, armazena ou processa nenhuma informação pessoal. Não há análises, contas de utilizador, formulários de contato ou mecanismos de rastreamento que coletem dados pessoais.",
+    "item-3-title": "3. Uso de Cookies",
+    "item-3-content": "Este Site usa apenas uma cookie, denominada next-locale, para armazenamento da preferência de idioma. Esta cookie é essencial para exibir o idioma e o conteúdo apropriados no Site.",
+    "item-4-title": "4. Uso de Armazenamento Local",
+    "item-4-content": "O armazenamento local é usado exclusivamente para salvar a sua preferência de tema (modo claro ou escuro). EsTes dados são armazenados no seu navegador e não são compartilhados com terceiros nem transmitidos a nenhum servidor. Ele é usado apenas para aprimorar a sua experiência, lembrando a sua preferência visual para visitas futuras.",
+    "item-5-title": "5. Serviços de Terceiros",
+    "item-5-content": "Este Site não utiliza quaisquer serviços de terceiros, incluindo ferramentas analíticas, redes de publicidade ou integrações de redes sociais que possam coletar dados pessoais ou rastrear o comportamento do utilizador.",
+    "item-6-title": "6. Os seus Direitos",
+    "item-6-content": "Como nenhuma informação pessoal é coletada ou processada, não há dados pessoais para acessar, modificar ou excluir. Você pode limpar o armazenamento local e as cookies do seu navegador a qualquer momento para remover as suas preferências anteriores, se desejar.",
+    "item-7-title": "7. Alterações à Política de Privacidade",
+    "item-7-content": "Posso atualizar esta Política de Privacidade para refletir alterações no Site ou requisitos legais. Quaisquer alterações serão refletidas nesta página e a data da última atualização será atualizada de acordo. Por favor, revise esta política periodicamente para se manter informado sobre como os seus dados são tratados."
+  },
+
+  "terms-of-service": {
+    "title": "Termos de Serviço",
+    "last-updated": "Última atualização: 18 de setembro, 2024",
+    "item-1-title": "1. Aceitação dos Termos",
+    "item-1-content": "Ao acessar ou usar este Site, você concorda em cumprir estes Termos e todas as leis e regulamentos aplicáveis. Se você não concordar com estes Termos, você está proibido de usar este Site.",
+    "item-2-title": "2. Uso do Website",
+    "item-2-content": "Este Site é destinado a pessoas físicas e jurídicas que buscam informações sobre meus serviços freelance de desenvolvimento web e para divulgar meu portfólio. Você concorda em usar este Site apenas para fins legais e de uma maneira que não infrinja os direitos, restrinja ou iniba o uso do Site por terceiros.",
+    "item-3-title": "3. Limitação de Responsabilidade",
+    "item-3-content": "Este Site é fornecido como está e sem qualquer garantia de qualquer tipo, expressa ou implícita. Embora eu me esforce para fornecer informações precisas e atualizadas, não faço representações ou garantias sobre a integridade, exatidão ou confiabilidade do conteúdo do Site.\nEm nenhum caso Rodrigo Freitas será responsável por quaisquer danos diretos, indiretos, danos incidentais, consequenciais ou especiais decorrentes do uso ou da incapacidade de usar este Site.",
+    "item-4-title": "4. Links Externos",
+    "item-4-content": "Este Site pode conter links para sites de terceiros. Esses links são fornecidos para sua conveniência e não assumo responsabilidade pelo conteúdo ou práticas de sites de terceiros. Você acessa qualquer site de terceiros por sua própria conta e risco.",
+    "item-5-title": "5. Alterações ao Website",
+    "item-5-content": "Reservo-me o direito de modificar, atualizar ou remover conteúdo do Site a qualquer momento, sem aviso prévio. Também me reservo o direito de suspender ou descontinuar o Site ou qualquer parte dele sem aviso prévio.",
+    "item-6-title": "6. Indemnização",
+    "item-6-content": "Você concorda em indemnizar e isentar Rodrigo Freitas, seus afiliados, funcionários e agentes de e contra quaisquer reivindicações, responsabilidades, danos, perdas ou despesas, incluindo honorários advocatícios, decorrentes ou de alguma forma relacionados ao uso deste Site ou violação destes Termos.",
+    "item-7-title": "7. Severabilidade",
+    "item-7-content": "Se qualquer disposição destes Termos for considerada ilegal, nula ou inexequível, as disposições restantes permanecerão em pleno vigor e efeito.",
+    "item-8-title": "8. Alterações aos Termos",
+    "item-8-content": "Posso atualizar estes Termos para refletir alterações nos requisitos legais ou na forma como opero o meu Site. A data no topo desta página indica quando é que estes Termos foram revisados ​​pela última vez. O uso do Site após quaisquer alterações significa a sua aceitação dos Termos atualizados."
+  },
+  "cookie-policy": {
+    "title": "Política de Cookies",
+    "last-updated": "Última atualização: 29 de setembro, 2024",
+    "item-1-title": "1. Cookies Utilizadas",
+    "item-1-content": "Este Site usa uma única cookie chamada next-locale, que armazena a sua preferência de idioma. Este cookie é usado para lembrar o seu idioma preferido quando você revisita o Site, garantindo que o conteúdo seja exibido no idioma correto. Ele não rastreia nenhum dado pessoal ou atividade de navegação.",
+    "item-2-title": "2. Cookies de Terceciros",
+    "item-2-content": "Como este Site não utiliza serviços de terceiros, como análises ou anúncios, nenhuma cookie de terceiros é colocada no seu dispositivo através deste Site.",
+    "item-3-title": "3. Armazenamento Local para Preferência do Tema",
+    "item-3-content": "Os únicos dados armazenados localmente no seu dispositivo são a sua preferência de tema (modo claro ou escuro), que é salvo usando armazenamento local. Isto é feito exclusivamente com o propósito de lembrar o tema selecionado quando você revisita o Site. Esses dados não são enviados ou armazenados em nenhum servidor e não são compartilhados com terceiros.",
+    "item-4-title": "4. Gerenciar Cookies e Armazenamento Local",
+    "item-4-content": "Você tem controlo sobre o armazenamento local e as configurações de cookies do seu navegador. Se desejar remover a sua preferência de tema do armazenamento local ou a sua preferência de idioma das cookies, você pode limpar os dados armazenados do seu navegador acessando as suas configurações. Isso redefinirá a sua preferência de tema e idioma para a configuração padrão quando você revisitar o Site.",
+    "item-5-title": "5. Changes to this Cookie Policy",
+    "item-5-content": "Posso atualizar esta Política de Cookies ocasionalmente. Quaisquer alterações serão refletidas nesta página e a data da última atualização será revisada de acordo."
+  }
+}

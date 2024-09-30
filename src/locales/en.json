@@ -1,0 +1,224 @@
+{
+  "hero": {
+    "description": "Full Stack Web Developer & Freelancer"
+  },
+  "hero-buttons": {
+    "view-my-work": "View My Work",
+    "contact-me": "Contact Me"
+  },
+  "about-section": {
+    "title": "About Me",
+    "description": "I'm a developer, freelancer and lifelong learner based in Portugal. I specialize in building custom solutions that are fast, responsive, and user-friendly. Whether it's a landing page or a complex application, I help businesses turn ideas into reality.",
+    "learn-more": "Learn More"
+  },
+  "services": {
+    "title": "What",
+    "title-gradient": "I Offer"
+  },
+  "services-items": {
+    "item-1-title": "Custom Web Development",
+    "item-1-description": "I develop custom websites and web apps tailored to your needs.",
+    "item-2-title": "UX/UI Design",
+    "item-2-description": "I design beautiful, user-friendly and responsive interfaces that are compatible with all devices.",
+    "item-3-title": "Web Deployment & Hosting",
+    "item-3-description": "I deploy your website on a secure server and provide hosting services.",
+    "item-4-title": "Search Engine Optimization (SEO)",
+    "item-4-description": "I optimize your website for search engines to increase your visibility.",
+    "item-5-title": "Continuous Development & Support",
+    "item-5-description": "I am available for expansion and support of your project.",
+    "item-6-title": "Consultation & Strategy",
+    "item-6-description": "I offer consultation and strategy to help you achieve your business goals.",
+    "item-7-title": "Competitive Pricing",
+    "item-7-description": "I offer fair and competitive prices for my services. Each project is unique and so are quotes."
+  },
+  "services-skeleton-items": {
+    "skeleton-4-title-1": "Server",
+    "skeleton-4-description-1": "Secure and reliable hosting",
+    "skeleton-4-title-2": "Domain",
+    "skeleton-4-description-2": "Custom website name",
+    "skeleton-4-title-3": "Backups",
+    "skeleton-4-description-3": "Keep your data safe",
+
+    "skeleton-5-text-1": "Hey, can you implement this feature?",
+    "skeleton-5-text-2": "Sure, I'll get it done",
+
+    "skeleton-8-title": "Need a custom solution?",
+    "skeleton-8-description": "Every project is unique. I'm here to help you bring your vision to life. Let's discuss your ideas!",
+    "skeleton-8-cta": "Contact Me"
+  },
+  "process": {
+    "title": "My consistent",
+    "title-gradient": "process",
+
+    "step-1-title": "1. Discovering & Planning",
+    "step-1-description": "We'll collaborate to map out your goals, target audience, and key functionalities. We'll discuss things like application structure, navigation, and content requirements.",
+
+    "step-2-title": "2. Design & Prototyping",
+    "step-2-description": "I’ll create a design prototype that aligns with what we discussed in the previous phase. This will give you a visual preview.",
+
+    "step-3-title": "3. Feedback & Iteration",
+    "step-3-description": "You'll review the prototype and provide feedback. We'll iterate on the design until you're satisfied, making sure the final product is exactly what you expected.",
+
+    "step-4-title": "4. Development",
+    "step-4-description": "I'll build the application using modern technologies ensuring it's fast, secure, and scalable. I'll keep you updated on the progress.",
+
+    "step-5-title": "5. Testing & Optimization",
+    "step-5-description": "I'll test the application to ensure it's bug-free and performant, ensuring a flawless user experience.",
+
+    "step-6-title": "6. Launch & Delivery",
+    "step-6-description": "Once everything is perfect, I’ll launch/deliver your project and provide you with all the necessary information to manage it."
+  },
+  "examples": {
+    "title": "Examples of what",
+    "title-gradient": "I can build",
+
+    "example-1-title": "Landing Pages & Portfolio",
+    "example-1-description": "Represent your brand and showcase your work. Attract new clients online and make a great first impression.",
+
+    "example-2-title": "Blogs",
+    "example-2-description": "Easily manage your blog with a Content Management System (CMS) so you can focus on writing and publishing without worries.",
+
+    "example-3-title": "Dashboards & Management Systems",
+    "example-3-description": "Have a system that helps you manage your business, completely tailored to your needs.",
+
+    "example-4-title": "Learning Platforms",
+    "example-4-description": "Create an online course platform where you can help others learn through your knowledge and experience.",
+
+    "example-5-title": "Custom Applications",
+    "example-5-description": "I can build a custom application that solves your specific problem or helps you achieve a specific goal.",
+
+    "example-6-title": "And a lot more",
+    "example-6-description": "Have a more complex project in mind? Let's discuss it and see how I can help you."
+  },
+  "faq": {
+    "title": "Frequently Asked",
+    "title-gradient": "Questions",
+
+    "faq-1-q": "How can I get started with a project?",
+    "faq-1-a": "You can get started with a project by sending me an email. I'll get back to you as soon as possible to discuss your project.",
+
+    "faq-2-q": "What is the cost of your services?",
+    "faq-2-a": "The cost of my services depends on the complexity of the project. I offer a free consultation to discuss your project and provide you with a quote.",
+
+    "faq-3-q": "How long does it take to complete a project?",
+    "faq-3-a": "The time it takes to complete a project depends on the scale and complexity of the project. I'll provide you with a timeline during our consultation.",
+
+    "faq-4-q": "Do you offer support after the project is completed?",
+    "faq-4-a": "Yes, I offer support after the project is completed. If you have any issues or questions, I'm available to help you.",
+
+    "faq-5-q": "I already have a website, can you help me improve it?",
+    "faq-5-a": "Yes, I can help you improve your existing website. Whether you need a redesign, new features, or optimization, I'm here to help."
+  },
+  "final-cta": {
+    "title": "Ready to take",
+    "title-gradient": "your",
+    "title-rest": "digital presence to the next level?",
+    "description": "Send me an email today and let's discuss how I can help you achieve your goals!",
+    "copy": "Copy Email",
+    "copied": "Copied!",
+    "email": "Send Email"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Portfolio",
+    "blog": "Blog",
+    "contact": "Contact Me"
+  },
+  "footer": {
+    "pages": "Pages",
+    "helpful-links": "Helpful Links",
+    "contact": "Contact",
+    "privacy-policy": "Privacy Policy",
+    "terms-of-service": "Terms of Service",
+    "cookie-policy": "Cookie Policy",
+    "end": "2024 Rodrigo Freitas. All rights reserved."
+  },
+  "about-page": {
+    "title": "About me",
+    "text-1": " My journey into programming started when I was still a kid. I've always been fascinated by technology and how things work behind the scenes. I liked the idea of creating something out of nothing. It was during this young age that I coded my first program, it was a simple application written in Visual Basic with some text and an image and ever since that moment I knew I wanted to become a software engineer.",
+    "text-2": " Fast forward to today, I've been programming and building things for over 3 years and I've worked with a variety of technologies. My main focus is web development but I have a broad knowledge of other areas.",
+    "timeline-title": "Timeline of",
+    "timeline-title-gradient": "my journey",
+
+    "tech-title": "Technologies",
+    "tech-title-gradient": "I Know",
+
+    "skill-title-1": "Languages",
+    "skill-title-2": "Frameworks, Libraries, Servers",
+    "skill-title-3": "Styling",
+    "skill-title-4": "Databases",
+    "skill-title-5": "Testing",
+    "skill-title-6": "Others",
+
+    "timeline-1-date": "2021 - Present",
+    "timeline-1-title": "Computer Engineering BSc at University of Madeira",
+    "timeline-1-description": "Started my pursuit of a degree in Computer Engineering at the University of Madeira. I've learned a lot about computer science, mathematics, and software engineering.",
+
+    "timeline-2-date": "2022",
+    "timeline-2-title": "The Odin Project's Full Stack JavaScript Curriculum",
+    "timeline-2-description": "Completed The Odin Project's Full Stack JavaScript curriculum, which covers the fundamentals of web development, including HTML, CSS, JavaScript, and Node.js.",
+
+    "timeline-3-date": "Summer 2023",
+    "timeline-3-title": "Full Stack Web Developer - Professional Internship at FreeBalance",
+    "timeline-3-description": "Interned at FreeBalance as a Full Stack Web Developer. Worked on real-world projects and gained valuable experience in a professional environment. I built three different projects using React, TypeScript, Bootstrap and Java Spring Boot.",
+
+    "timeline-4-date": "2024 - Present",
+    "timeline-4-title": "Freelance Full Stack Developer",
+    "timeline-4-description": "Started freelancing as a Full Stack Developer. I've worked on a variety of projects, from simple landing pages to complex web applications. I've helped clients turn their ideas into reality and achieve their business goals."
+  },
+
+  "privacy-policy": {
+    "title": "Privacy Policy",
+    "last-updated": "Last Updated: September 18, 2024",
+    "item-1-title": "1. What Data is Collected",
+    "item-1-content": "The only data stored on your device is your theme preference (light or dark mode) and your language preference (english or portuguese). This information is saved locally on your browser using local storage and cookies and is used solely to remember your theme and language choices when you revisit the website.",
+    "item-2-title": "2. What Data is NOT Collected",
+    "item-2-content": "This website does not collect, store, or process any personal information. There are no analytics, user accounts, contact forms, or tracking mechanisms in place that gather personal data.",
+    "item-3-title": "3. Use of Cookies",
+    "item-3-content": "This Website uses only one cookie, named next-locale, for language preference storage. This cookie is essential to display the appropriate language and content on the Website.",
+    "item-4-title": "4. Use of Local Storage",
+    "item-4-content": "Local storage is used solely for saving your theme preference (light or dark mode). This data is stored on your browser and is not shared with any third parties or transmitted to any server. It is used only to enhance your experience by remembering your visual preference for future visits.",
+    "item-5-title": "5. Third-Party Services",
+    "item-5-content": "This Website does not use any third-party services, including analytics tools, advertising networks, or social media integrations that could collect personal data or track user behavior.",
+    "item-6-title": "6. Your Rights",
+    "item-6-content": "Since no personal information is collected or processed, there is no personal data to access, modify, or delete. You can clear your browser’s local storage and cookies at any time to remove your past preferences if desired.",
+    "item-7-title": "7. Changes to This Privacy Policy",
+    "item-7-content": "I may update this Privacy Policy from time to time to reflect changes in the Website or legal requirements. Any changes will be reflected on this page, and the last updated date will be updated accordingly. Please review this policy periodically to stay informed about how your data is handled."
+  },
+
+  "terms-of-service": {
+    "title": "Terms of Service",
+    "last-updated": "Last Updated: September 18, 2024",
+    "item-1-title": "1. Acceptance of Terms",
+    "item-1-content": "By accessing or using this Website, you agree to abide by these Terms and all applicable laws and regulations. If you do not agree to these Terms, you are prohibited from using this Website.",
+    "item-2-title": "2. Use of the Website",
+    "item-2-content": "This Website is intended for individuals and businesses seeking information about my freelance web development services and to showcase my portfolio. You agree to use this Website only for lawful purposes and in a manner that does not infringe upon the rights of, restrict, or inhibit the use of the Website by any third party.",
+    "item-3-title": "3. Limitation of Liability",
+    "item-3-content": "This Website is provided as is and without any warranty of any kind, either express or implied. While I strive to provide accurate and up-to-date information, I make no representations or warranties about the completeness, accuracy, or reliability of the content on the Website.\nIn no event shall Rodrigo Freitas be liable for any direct, indirect, incidental, consequential, or special damages arising from the use of or inability to use this Website.",
+    "item-4-title": "4. External Links",
+    "item-4-content": "This Website may contain links to third-party websites. These links are provided for your convenience, and I do not endorse or take responsibility for the content or practices of any third-party websites. You access any third-party websites at your own risk.",
+    "item-5-title": "5. Changes to the Website",
+    "item-5-content": "I reserve the right to modify, update, or remove content from the Website at any time without notice. I also reserve the right to suspend or discontinue the Website or any part of it without prior notice.",
+    "item-6-title": "6. Indemnification",
+    "item-6-content": "You agree to indemnify and hold harmless Rodrigo Freitas, its affiliates, employees, and agents from and against any claims, liabilities, damages, losses, or expenses, including legal fees, arising out of or in any way connected with your use of this Website or your violation of these Terms.",
+    "item-7-title": "7. Severability",
+    "item-7-content": "If any provision of these Terms is found to be unlawful, void, or unenforceable, the remaining provisions shall remain in full force and effect.",
+    "item-8-title": "8. Changes to the Terms",
+    "item-8-content": "I may update these Terms from time to time to reflect changes in legal requirements or in the way I operate my Website. The  date at the top of this page indicates when these Terms were last revised. Your continued use of the Website after any changes are made signifies your acceptance of the updated Terms."
+  },
+  "cookie-policy": {
+    "title": "Cookie Policy",
+    "last-updated": "Last updated: September 29, 2024",
+    "item-1-title": "1. Cookies Used",
+    "item-1-content": "This Website uses a single cookie called next-locale, which stores your language preference. This cookie is used to remember your preferred language when you revisit the Website, ensuring the content is displayed in the correct language. It does not track any personal data or browsing activity.",
+    "item-2-title": "2. Third-Party Cookies",
+    "item-2-content": "Since this Website does not use third-party services like analytics or ads, no third-party cookies are placed on your device through this Website.",
+    "item-3-title": "3. Local Storage for Theme Preference",
+    "item-3-content": "The only data stored locally on your device is your theme preference (light or dark mode), which is saved using local storage. This is done solely for the purpose of remembering your selected theme when you revisit the Website. This data is not sent to or stored on any server, and it is not shared with any third parties.",
+    "item-4-title": "4. Managing Cookies and Local Storage",
+    "item-4-content": "You have control over your browser’s local storage and cookies settings. If you wish to remove your theme preference from local storage or your language preference from cookies, you can clear your browser’s stored data by accessing your browser’s settings. This will reset your theme preference and language preference to the default setting when you revisit the Website.",
+    "item-5-title": "5. Changes to this Cookie Policy",
+    "item-5-content": "I may update this Cookie Policy occasionally. Any changes will be reflected on this page, and the last updated date will be revised accordingly."
+  }
+}

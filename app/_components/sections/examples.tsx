@@ -8,6 +8,7 @@ import {
   LayoutDashboardIcon,
   NotebookPenIcon,
 } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 
 import { ExampleCard } from "../example-card";
 
@@ -17,62 +18,59 @@ export type Example = {
   icon?: JSX.Element;
 };
 
-const examples = [
-  {
-    title: "Landing Pages & Portfolios",
-    description:
-      "Represent your brand and showcase your work. Attract new clients online and make a great first impression.",
-    icon: (
-      <HouseIcon className="h-10 w-10 text-blue-500 sm:h-16 sm:w-16 md:h-12 md:w-12 lg:h-16 lg:w-16" />
-    ),
-  },
-  {
-    title: "Blogs",
-    description:
-      "Easily manage your blog with a Content Management System (CMS) so you can focus on writing and publishing without worries.",
-    icon: (
-      <NotebookPenIcon className="h-10 w-10 text-blue-500 sm:h-16 sm:w-16 md:h-12 md:w-12 lg:h-16 lg:w-16" />
-    ),
-  },
-  {
-    title: "Dashboards & Management Systems",
-    description:
-      "Have a system that helps you manage your business, completely tailored to your needs.",
-    icon: (
-      <LayoutDashboardIcon className="h-10 w-10 text-blue-500 sm:h-16 sm:w-16 md:h-12 md:w-12 lg:h-16 lg:w-16" />
-    ),
-  },
-  {
-    title: "Learning Platforms",
-    description:
-      "Create an online course platform where you can help others learn through your knowledge and experience.",
-    icon: (
-      <GraduationCapIcon className="h-10 w-10 text-blue-500 sm:h-16 sm:w-16 md:h-12 md:w-12 lg:h-16 lg:w-16" />
-    ),
-  },
-  {
-    title: "Custom Applications",
-    description:
-      "I can build a custom application that solves your specific problem or helps you achieve a specific goal.",
-    icon: (
-      <AppWindowMacIcon className="h-10 w-10 text-blue-500 sm:h-16 sm:w-16 md:h-12 md:w-12 lg:h-16 lg:w-16" />
-    ),
-  },
-  {
-    title: "And a lot more",
-    description:
-      "Have a more complex project in mind? Let's discuss it and see how I can help you.",
-    icon: (
-      <CircleEllipsisIcon className="h-10 w-10 text-blue-500 sm:h-16 sm:w-16 md:h-12 md:w-12 lg:h-16 lg:w-16" />
-    ),
-  },
-];
-
 export async function Examples() {
+  const t = await getTranslations("examples");
+
+  const examples = [
+    {
+      title: t("example-1-title"),
+      description: t("example-1-description"),
+      icon: (
+        <HouseIcon className="h-10 w-10 text-blue-500 sm:h-16 sm:w-16 md:h-12 md:w-12 lg:h-16 lg:w-16" />
+      ),
+    },
+    {
+      title: t("example-2-title"),
+      description: t("example-2-description"),
+      icon: (
+        <NotebookPenIcon className="h-10 w-10 text-blue-500 sm:h-16 sm:w-16 md:h-12 md:w-12 lg:h-16 lg:w-16" />
+      ),
+    },
+    {
+      title: t("example-3-title"),
+      description: t("example-3-description"),
+      icon: (
+        <LayoutDashboardIcon className="h-10 w-10 text-blue-500 sm:h-16 sm:w-16 md:h-12 md:w-12 lg:h-16 lg:w-16" />
+      ),
+    },
+    {
+      title: t("example-4-title"),
+      description: t("example-4-description"),
+      icon: (
+        <GraduationCapIcon className="h-10 w-10 text-blue-500 sm:h-16 sm:w-16 md:h-12 md:w-12 lg:h-16 lg:w-16" />
+      ),
+    },
+    {
+      title: t("example-5-title"),
+      description: t("example-5-description"),
+      icon: (
+        <AppWindowMacIcon className="h-10 w-10 text-blue-500 sm:h-16 sm:w-16 md:h-12 md:w-12 lg:h-16 lg:w-16" />
+      ),
+    },
+    {
+      title: t("example-6-title"),
+      description: t("example-6-description"),
+      icon: (
+        <CircleEllipsisIcon className="h-10 w-10 text-blue-500 sm:h-16 sm:w-16 md:h-12 md:w-12 lg:h-16 lg:w-16" />
+      ),
+    },
+  ];
+
   return (
     <>
       <h2 className="heading mb-12 text-center sm:mb-16">
-        Examples of what <span className="blue-gradient"> I can build</span>
+        {t("title")}{" "}
+        <span className="blue-gradient"> {t("title-gradient")}</span>
       </h2>
       <ul className="grid grid-cols-1 gap-12 md:grid-cols-2">
         {examples.map((example, i) => (

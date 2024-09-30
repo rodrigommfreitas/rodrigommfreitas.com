@@ -1,12 +1,38 @@
 "use server";
 
-import { timeline } from "@/src/data/about/timeline";
+import { getTranslations } from "next-intl/server";
 
 export async function Timeline() {
+  const t = await getTranslations("about-page");
+
+  const timeline = [
+    {
+      date: t("timeline-4-date"),
+      title: t("timeline-4-title"),
+      description: t("timeline-4-description"),
+    },
+    {
+      date: t("timeline-3-date"),
+      title: t("timeline-3-title"),
+      description: t("timeline-3-description"),
+    },
+    {
+      date: t("timeline-2-date"),
+      title: t("timeline-2-title"),
+      description: t("timeline-2-description"),
+    },
+    {
+      date: t("timeline-1-date"),
+      title: t("timeline-1-title"),
+      description: t("timeline-1-description"),
+    },
+  ];
+
   return (
     <>
       <h2 className="heading mb-[84px] text-center">
-        Timeline of <span className="blue-gradient">my journey</span>
+        {t("timeline-title")}
+        <span className="blue-gradient"> {t("timeline-title-gradient")}</span>
       </h2>
 
       <div className="mx-auto px-4 sm:px-6 lg:px-8">

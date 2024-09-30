@@ -1,13 +1,18 @@
+"use server";
+
+import { getHeroButtonsData } from "@/src/data/home/hero";
 import Link from "next/link";
 
-export function HeroButtons() {
+export async function HeroButtons() {
+  const data = await getHeroButtonsData();
+
   return (
     <>
-      <Link href="#portfolio" className="cta">
-        View My Work
+      <Link href={data.buttons[0].href} className="cta">
+        {data.buttons[0].label}
       </Link>
-      <Link href="#contact" className="cta-contrast">
-        Contact Me
+      <Link href={data.buttons[1].href} className="cta-contrast">
+        {data.buttons[1].label}
       </Link>
     </>
   );
