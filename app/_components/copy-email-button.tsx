@@ -21,11 +21,11 @@ export function CopyEmailButton({ email = "rodrigommfreitas@protonmail.com" }) {
 
   return (
     <>
-      <p className="mb-6 mt-8 text-center text-lg font-medium sm:text-xl md:text-2xl">
+      <p className="z-10 mb-6 mt-8 text-center text-lg font-medium sm:text-xl md:text-2xl">
         {email}
       </p>
 
-      <div className="flex justify-center gap-8">
+      <div className="z-10 flex justify-center gap-8">
         {copied ? (
           <button className="cta items-center justify-center gap-2 !px-2 sm:!px-6">
             <CheckIcon className="h-4 w-4" />
