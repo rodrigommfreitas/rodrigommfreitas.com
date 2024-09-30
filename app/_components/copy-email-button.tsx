@@ -20,20 +20,21 @@ export function CopyEmailButton({ email = "rodrigommfreitas@protonmail.com" }) {
   }, [email]);
 
   return (
-    <div className="mt-8">
-      <p className="mb-6 text-center text-lg font-medium sm:text-xl md:text-2xl">
+    <>
+      <p className="mb-6 mt-8 text-center text-lg font-medium sm:text-xl md:text-2xl">
         {email}
       </p>
+
       <div className="flex justify-center gap-8">
         {copied ? (
-          <button className="cta flex !w-full items-center justify-center gap-2 !px-2 sm:!px-6">
+          <button className="cta items-center justify-center gap-2 !px-2 sm:!px-6">
             <CheckIcon className="h-4 w-4" />
             <span>{t("copied")}</span>
           </button>
         ) : (
           <button
             onClick={handleCopy}
-            className="cta flex !w-full items-center justify-center gap-2 !px-2 sm:!px-6"
+            className="cta items-center justify-center gap-2 !px-2 sm:!px-6"
           >
             <CopyIcon className="h-4 w-4" />
             <span>{t("copy")}</span>
@@ -41,12 +42,12 @@ export function CopyEmailButton({ email = "rodrigommfreitas@protonmail.com" }) {
         )}
         <button
           onClick={handleEmail}
-          className="cta-contrast sm!:px-6 flex !w-full items-center justify-center gap-2 !px-2"
+          className="cta-contrast items-center justify-center gap-2 !px-2 sm:!px-6"
         >
           <MailIcon className="h-4 w-4" />
           <span>{t("email")}</span>
         </button>
       </div>
-    </div>
+    </>
   );
 }

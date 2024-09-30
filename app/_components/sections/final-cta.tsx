@@ -18,6 +18,7 @@ export async function FinalCta() {
       <p className="text-color mt-12 text-center text-xl sm:text-2xl md:text-3xl">
         {t("description")}
       </p>
+
       <CopyEmailButton />
     </div>
   );
