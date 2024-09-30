@@ -1,5 +1,6 @@
 "use client";
 
+import { Link } from "@/src/i18n/routing";
 import { motion } from "framer-motion";
 import { DatabaseBackupIcon, ServerIcon, TagIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -230,7 +231,9 @@ export function Services() {
         <p className="text-center font-normal text-neutral-600 dark:text-neutral-300">
           {skeletonsT("skeleton-8-description")}
         </p>
-        <button className="cta">{skeletonsT("skeleton-8-cta")}</button>
+        <Link href={"#contact"} className="cta">
+          {skeletonsT("skeleton-8-cta")}
+        </Link>
       </motion.div>
     );
   };
