@@ -53,9 +53,6 @@ html {
 }
 
 @layer utilities {
-  .text-balance {
-    @apply text-wrap: balance;
-  }
   .heading {
     @apply text-4xl font-bold tracking-tighter md:text-5xl/none;
   }
