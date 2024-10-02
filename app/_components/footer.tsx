@@ -74,7 +74,7 @@ export async function Footer() {
 
               <li>
                 <a
-                  href="https://x.com/rdrgwrld"
+                  href="https://x.com/rodrigommfreita"
                   rel="noreferrer"
                   target="_blank"
                   className="text-color transition hover:opacity-75"
