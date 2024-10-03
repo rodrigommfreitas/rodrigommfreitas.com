@@ -35,7 +35,7 @@ export async function FAQ() {
       <h2 className="heading mb-12 text-center sm:mb-16">
         {" "}
         {t("title")}{" "}
-        <span className="blue-gradient">{t("title-gradient")}</span>
+        <span className="blue-gradient pr-1">{t("title-gradient")}</span>
       </h2>
       <ul className="space-y-4">
         {faqs.map((faq, index) => (

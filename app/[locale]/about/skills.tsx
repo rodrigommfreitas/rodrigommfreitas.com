@@ -51,7 +51,7 @@ export async function Skills() {
     <>
       <h2 className="heading mb-12 sm:mb-16">
         {t("tech-title")}{" "}
-        <span className="blue-gradient">{t("tech-title-gradient")}</span>
+        <span className="blue-gradient pr-1">{t("tech-title-gradient")}</span>
       </h2>
       <div className="w-full space-y-8">
         {skills.map((skill, index) => (

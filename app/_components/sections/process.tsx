@@ -37,7 +37,7 @@ export function Process() {
     <>
       <h2 className="heading mb-12 text-center sm:mb-16">
         {t("title")}{" "}
-        <span className="blue-gradient">{t("title-gradient")}</span>
+        <span className="blue-gradient pr-1">{t("title-gradient")}</span>
       </h2>
       <HoverEffect items={steps} />
     </>

@@ -32,7 +32,10 @@ export async function Timeline() {
     <>
       <h2 className="heading mb-[84px] text-center">
         {t("timeline-title")}
-        <span className="blue-gradient"> {t("timeline-title-gradient")}</span>
+        <span className="blue-gradient pr-1">
+          {" "}
+          {t("timeline-title-gradient")}
+        </span>
       </h2>
 
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
