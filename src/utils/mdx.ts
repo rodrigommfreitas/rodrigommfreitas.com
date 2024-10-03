@@ -31,6 +31,13 @@ function formatDate(dateString: string): string {
   }).format(date);
 }
 
+export function validateSlug(slug: string): boolean {
+  if (!fs.existsSync(path.join(contentDirectory, `${slug}.mdx`))) {
+    return false;
+  }
+  return true;
+}
+
 function slugify(text: string): string {
   return text
     .toString() // Convert to string
@@ -62,6 +69,10 @@ export function getAllPostsFrontmatter(): PostFrontmatterWithSlug[] {
   });
 }
 
+export function getAllPostsSlugs(): string[] {
+  return getAllPostsFrontmatter().map(({ slug }) => slug);
+}
+
 export function getLatestPostsFrontmatter(
   count: number,
 ): PostFrontmatterWithSlug[] {
@@ -70,6 +81,10 @@ export function getLatestPostsFrontmatter(
 
 export function getPostBySlug(slug: string): Omit<Post, "slug"> {
   const filePath = path.join(contentDirectory, `${slug}.mdx`);
+  const fileExists = fs.existsSync(filePath);
+  if (!fileExists) {
+    throw new Error(`File not found: ${filePath}`);
+  }
   const fileContents = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(fileContents);
   const formattedDate = formatDate(data.date);

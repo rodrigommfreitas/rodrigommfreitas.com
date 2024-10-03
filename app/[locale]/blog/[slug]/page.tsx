@@ -1,15 +1,37 @@
-"use server";
-
-import { getPostBySlug } from "@/src/utils/mdx";
+import { redirect } from "@/src/i18n/routing";
+import { getAllPostsSlugs, getPostBySlug, validateSlug } from "@/src/utils/mdx";
 import { Metadata } from "next";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import rehypePrettyCode from "rehype-pretty-code";
 
 interface Props {
-  params: { slug: string };
+  params: { slug: string; locale: string };
+}
+
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+  const slugs = getAllPostsSlugs();
+  const locales = ["en", "pt"];
+
+  return locales.flatMap((locale) =>
+    slugs.map((slug) => ({
+      locale,
+      slug,
+    })),
+  );
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const postExists = validateSlug(params.slug);
+
+  if (!postExists) {
+    return {
+      title: "404",
+      description: "404",
+    };
+  }
+
   const { frontmatter } = getPostBySlug(params.slug);
   return {
     title: frontmatter.title,
@@ -18,6 +40,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function BlogPost({ params }: Props) {
+  const postExists = validateSlug(params.slug);
+  if (!postExists) {
+    redirect("/blog");
+  }
   const { frontmatter, content } = getPostBySlug(params.slug);
 
   return (

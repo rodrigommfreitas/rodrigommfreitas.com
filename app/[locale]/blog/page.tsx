@@ -1,10 +1,17 @@
-"use server";
-
-import { getTranslations } from "next-intl/server";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 
 import { BlogPostList } from "./blog-post-list";
 
-export default async function Blog() {
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+  return [{ locale: "en" }, { locale: "pt" }];
+}
+
+export default async function Blog({
+  params: { locale },
+}: Readonly<{ params: { locale: string } }>) {
+  unstable_setRequestLocale(locale);
   const t = await getTranslations("blog");
 
   return (

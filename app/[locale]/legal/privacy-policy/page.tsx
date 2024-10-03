@@ -1,11 +1,18 @@
 "use server";
 
-import { getTranslations } from "next-intl/server";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 
 import { LegalItemList } from "../legal-item-list";
 
-export default async function PrivacyPolicy() {
-  const t = await getTranslations("privacy-policy");
+export async function generateStaticParams() {
+  return [{ locale: "en" }, { locale: "pt" }];
+}
+
+export default async function PrivacyPolicy({
+  params: { locale },
+}: Readonly<{ params: { locale: string } }>) {
+  unstable_setRequestLocale(locale);
+  const t = await getTranslations({ locale, namespace: "privacy-policy" });
 
   const privacyPolicy = [
     {

@@ -16,7 +16,7 @@ export async function getHeroButtonsData() {
     buttons: [
       {
         label: t("view-my-work"),
-        href: "#portfolio",
+        href: "#about",
       },
       {
         label: t("contact-me"),

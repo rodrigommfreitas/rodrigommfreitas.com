@@ -3,6 +3,7 @@ import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import { NextIntlClientProvider, useLocale } from "next-intl";
 import { getLocale, getMessages, getTranslations } from "next-intl/server";
+import { unstable_setRequestLocale } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
 
 import { FloatingNav } from "../_components/floating-navbar";
@@ -65,6 +66,7 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }>) {
+  unstable_setRequestLocale(locale);
   const messages = await getMessages();
 
   return (
@@ -79,7 +81,7 @@ export default async function RootLayout({
           defaultTheme="system"
           enableSystem={true}
         >
-          <NextIntlClientProvider messages={messages}>
+          <NextIntlClientProvider messages={messages} locale={locale}>
             <div className="min-w-screen min-h-screen bg-zinc-50 text-black dark:bg-black dark:text-white">
               <main className="mx-auto antialiased md:flex-row md:px-0">
                 <FloatingNav />
