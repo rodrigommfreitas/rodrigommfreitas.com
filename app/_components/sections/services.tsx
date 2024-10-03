@@ -18,7 +18,7 @@ export function Services() {
     return (
       <motion.img
         src="/landing/custom-web-development.jpg"
-        className="h-full w-full flex-col rounded-xl"
+        className="h-[180px] w-full rounded-xl"
         alt="Custom Web Development"
       />
     );
@@ -69,7 +69,7 @@ export function Services() {
     return (
       <motion.img
         src="/landing/ux-ui.jpg"
-        className="h-full w-full flex-col rounded-xl"
+        className="h-[180px] w-full rounded-xl"
         alt="UX/UI Design"
       />
     );
@@ -210,7 +210,7 @@ export function Services() {
     return (
       <motion.img
         src="/landing/consultation.jpg"
-        className="h-full w-full flex-col rounded-xl"
+        className="h-[180px] w-full rounded-xl"
         alt="Consultation"
       />
     );
@@ -220,7 +220,7 @@ export function Services() {
     return (
       <motion.img
         src="/landing/handshake.jpg"
-        className="h-full w-full flex-col rounded-xl"
+        className="h-[180px] w-full rounded-xl"
         alt="Handshake"
       />
     );
@@ -245,7 +245,7 @@ export function Services() {
   const items = [
     {
       title: itemsT("item-1-title"),
-      description: <span>{itemsT("item-1-description")}</span>,
+      description: itemsT("item-1-description"),
       header: <SkeletonOne />,
       className: "md:col-span-1",
     },
