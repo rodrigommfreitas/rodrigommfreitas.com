@@ -16,7 +16,9 @@ html {
 @layer base {
   .post {
     @apply !prose;
-
+    strong {
+      @apply !text-black dark:!text-white;
+    }
     h1 {
       @apply text-3xl font-bold text-black dark:text-white;
     }
