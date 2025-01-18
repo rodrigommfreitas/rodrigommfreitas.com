@@ -103,7 +103,7 @@ const Nav = ({ lang }: { lang: string }) => {
         {Object.entries(navItems).map(([path, { name }]) => (
           <a
             key={path}
-            href={`/${path}`}
+            href={`/${lang}/${path}`}
             className="flex justify-center py-4 text-neutral-600 hover:text-neutral-500 dark:text-neutral-50 dark:hover:text-neutral-300"
           >
             <span className="text-lg font-medium">{name}</span>
