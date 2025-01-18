@@ -1,0 +1,194 @@
+---
+import {
+  Handshake,
+  MonitorSmartphone,
+  PencilRuler,
+  Rocket,
+  SearchCheck,
+  TableOfContents,
+} from "lucide-astro";
+import { useTranslations, type Lang } from "../i18n/utils";
+
+const t = useTranslations(Astro.currentLocale as Lang);
+
+const title = t({
+  pt: "O Que Pode Esperar Para ",
+  en: "What You Can Expect For ",
+});
+
+const titleGradient = t({
+  pt: "o Seu Site",
+  en: "Your Website",
+});
+
+const subtitle = t({
+  pt: "Descubra o que posso fazer para elevar o seu negócio com soluções web modernas e de alta qualidade.",
+  en: "Discover what I can do to elevate your business with modern and high-quality web solutions.",
+});
+
+const firstTitle = t({
+  pt: "Design Personalizado",
+  en: "Custom Website Design",
+});
+
+const firstText = t({
+  pt: "Páginas personalizadas que refletem a identidade da sua marca e atendem aos objetivos do seu negócio.",
+  en: "Tailored websites that reflect your brand identity and meet your business goals.",
+});
+
+const secondTitle = t({
+  pt: "Design Responsivo",
+  en: "Responsive Design",
+});
+
+const secondText = t({
+  pt: "Websites com um visual incrível e que funcionam perfeitamente em todos os dispositivos, desde desktops até smartphones.",
+  en: "Websites that look stunning and work perfectly on all devices, from desktops to smartphones.",
+});
+
+const thirdTitle = t({
+  pt: "Otimização de motores de busca (SEO)",
+  en: "Search Engine Optimization",
+});
+
+const thirdText = t({
+  pt: "Aumente a sua visibilidade online com otimizações para motores de busca, permitindo-o atrair mais visitantes.",
+  en: "Boost your visibility online with websites optimized for search engines to attract more visitors.",
+});
+
+const fourthTitle = t({
+  pt: "Carregamento Rápido",
+  en: "Fast Load Times",
+});
+
+const fourthText = t({
+  pt: "Websites com excelente desempenho, oferecendo tempos de carregamento extremamente rápidos e uma experiência de usuário perfeita.",
+  en: "Websites built with performance in mind to deliver fast load times and a seamless user experience.",
+});
+
+const fifthTitle = t({
+  pt: "Estrutura e Texto Persuasivo",
+  en: "Optimal Structure and Copy",
+});
+
+const fifthText = t({
+  pt: "Eu uso métodos comprovados para maximizar conversões através de uma estrutura lógica e texto persuasivo.",
+  en: "I use proven methods to maximize conversions through persuasive content structure and compelling copy.",
+});
+
+const sixthTitle = t({
+  pt: "Manutenção e Suporte",
+  en: "Maintenance and Support",
+});
+
+const sixthText = t({
+  pt: "Suporte compreensivo para garantir que o seu site continue sempre com uma excelente performance e esteja sempre atualizado.",
+  en: "Comprehensive post-launch support to ensure your website runs smoothly and stays up-to-date.",
+});
+---
+
+<div class="max-w-7xl mx-auto px-8 lg:px-4 xl:px-0">
+  <!-- Section Title -->
+  <h2 class="heading">
+    {title}
+    <span class="text-gradient">{titleGradient}</span>
+  </h2>
+  <p class="sub-heading">{subtitle}</p>
+
+  <!-- Features Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Feature 1 -->
+    <div
+      class="flex items-start from-zinc-200 via-zinc-100 to-zinc-300 dark:from-zinc-900 dark:via-zinc-950 dark:to-zinc-800 bg-gradient-to-br p-6 rounded-lg shadow-md"
+    >
+      <PencilRuler size={50} class="icon-color mr-4 flex-shrink-0" />
+
+      <div>
+        <h3 class="text-xl font-bold text-black/90 dark:text-white/90 mb-2">
+          {firstTitle}
+        </h3>
+        <p class="text-color">
+          {firstText}
+        </p>
+      </div>
+    </div>
+
+    <!-- Feature 2 -->
+    <div
+      class="flex items-start from-zinc-200 via-zinc-100 to-zinc-300 dark:from-zinc-900 dark:via-zinc-950 dark:to-zinc-800 bg-gradient-to-br p-6 rounded-lg shadow-md"
+    >
+      <MonitorSmartphone size={50} class="icon-color mr-4 flex-shrink-0" />
+      <div>
+        <h3 class="text-xl font-bold text-black/90 dark:text-white/90 mb-2">
+          {secondTitle}
+        </h3>
+        <p class="text-color">
+          {secondText}
+        </p>
+      </div>
+    </div>
+
+    <!-- Feature 3 -->
+    <div
+      class="flex items-start from-zinc-200 via-zinc-100 to-zinc-300 dark:from-zinc-900 dark:via-zinc-950 dark:to-zinc-800 bg-gradient-to-br p-6 rounded-lg shadow-md"
+    >
+      <SearchCheck size={50} class="icon-color mr-4 flex-shrink-0" />
+      <div>
+        <h3 class="text-xl font-bold text-black/90 dark:text-white/90 mb-2">
+          {thirdTitle}
+        </h3>
+        <p class="text-color">
+          {thirdText}
+        </p>
+      </div>
+    </div>
+
+    <!-- Feature 4 -->
+    <div
+      class="flex items-start from-zinc-200 via-zinc-100 to-zinc-300 dark:from-zinc-900 dark:via-zinc-950 dark:to-zinc-800 bg-gradient-to-br p-6 rounded-lg shadow-md"
+    >
+      <Rocket size={50} class="icon-color mr-4 flex-shrink-0" />
+
+      <div>
+        <h3 class="text-xl font-bold text-black/90 dark:text-white/90 mb-2">
+          {fourthTitle}
+        </h3>
+        <p class="text-color">
+          {fourthText}
+        </p>
+      </div>
+    </div>
+
+    <!-- Feature 5 -->
+    <div
+      class="flex items-start from-zinc-200 via-zinc-100 to-zinc-300 dark:from-zinc-900 dark:via-zinc-950 dark:to-zinc-800 bg-gradient-to-br p-6 rounded-lg shadow-md"
+    >
+      <TableOfContents size={50} class="icon-color mr-4 flex-shrink-0" />
+
+      <div>
+        <h3 class="text-xl font-bold text-black/90 dark:text-white/90 mb-2">
+          {fifthTitle}
+        </h3>
+        <p class="text-color">
+          {fifthText}
+        </p>
+      </div>
+    </div>
+
+    <!-- Feature 6 -->
+    <div
+      class="flex items-start from-zinc-200 via-zinc-100 to-zinc-300 dark:from-zinc-900 dark:via-zinc-950 dark:to-zinc-800 bg-gradient-to-br p-6 rounded-lg shadow-md"
+    >
+      <Handshake size={50} class="icon-color mr-4 flex-shrink-0" />
+
+      <div>
+        <h3 class="text-xl font-bold text-black/90 dark:text-white/90 mb-2">
+          {sixthTitle}
+        </h3>
+        <p class="text-color">
+          {sixthText}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

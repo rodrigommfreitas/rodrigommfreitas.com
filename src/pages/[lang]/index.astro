@@ -1,0 +1,68 @@
+---
+import Benefits from "../../components/Benefits.astro";
+import Features from "../../components/Features.astro";
+import Header from "../../components/Header.astro";
+import Portfolio from "../../components/Portfolio.astro";
+import Testimonials from "../../components/Testimonials.astro";
+import About from "../../components/About.astro";
+import FAQ from "../../components/FAQ.tsx";
+
+import { LOCALES, type Lang } from "../../i18n/utils";
+import Layout from "../../layouts/Base.astro";
+import Final from "../../components/Final.astro";
+
+export const getStaticPaths = () =>
+  Object.keys(LOCALES).map((lang) => ({
+    params: { lang },
+  }));
+---
+
+<Layout>
+  <header
+    id="home"
+    class="py-16 md:py-32 md:pt-44 bg-gradient-to-tr from-white dark:from-black dark:via-black via-white to-zinc-300 dark:to-red-900/30"
+  >
+    <Header />
+  </header>
+
+  <section
+    class="dark:from-black from-white via-zinc-100 to-white dark:via-zinc-900 dark:to-black bg-gradient-to-b py-16 md:py-24"
+  >
+    <Benefits />
+  </section>
+  <section
+    id="portfolio"
+    class="dark:from-black from-white via-zinc-100 to-white dark:via-zinc-900 dark:to-black bg-gradient-to-b py-16 md:py-24"
+  >
+    <Portfolio />
+  </section>
+  <section
+    class="dark:from-black from-white via-zinc-100 to-white dark:via-zinc-900 dark:to-black bg-gradient-to-b py-16 md:py-24"
+  >
+    <Features />
+  </section>
+  <section
+    class="dark:from-black from-white via-zinc-100 to-white dark:via-zinc-950 dark:to-black bg-gradient-to-b py-16 md:py-24"
+  >
+    <About />
+  </section>
+  <section
+    id="testimonials"
+    class="pt-16 pb-0 dark:from-black from-white via-zinc-50 to-white dark:via-zinc-950 dark:to-black bg-gradient-to-b"
+  >
+    <Testimonials />
+  </section>
+  <section
+    class="dark:from-black from-white via-zinc-100 to-white dark:via-zinc-950 dark:to-black bg-gradient-to-b pb-16 md:pb-24 pt-32 md:pt-40"
+  >
+    <FAQ client:load lang={Astro.currentLocale!} />
+  </section>
+
+  <section class="relative bg-black border-t-2 border-red-700">
+    <Final />
+    <div
+      class="w-full absolute bottom-0 h-16 md:h-24 bg-gradient-to-b from-transparent to-black"
+    >
+    </div>
+  </section>
+</Layout>

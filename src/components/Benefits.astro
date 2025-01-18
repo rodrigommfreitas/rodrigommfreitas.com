@@ -1,0 +1,112 @@
+---
+import { BadgeCheck, Clock, Eye } from "lucide-astro";
+import { useTranslations, type Lang } from "../i18n/utils";
+
+const t = useTranslations(Astro.currentLocale as Lang);
+
+const title = t({
+  pt: "Porquê Que o Seu Negócio",
+  en: "Why Your Business",
+});
+
+const titleGradient = t({
+  pt: "Precisa",
+  en: "Needs",
+});
+
+const title2 = t({
+  pt: "de um",
+  en: "a",
+});
+
+const subtitle = t({
+  pt: "Um website é uma ferramenta essencial para qualquer negócio, independentemente do seu tamanho ou setor. Descubra como um site pode ajudá-lo a crescer e a alcançar novos patamares.",
+  en: "A website is an essential tool for any business, regardless of its size or sector. Discover how a website can help your company grow and reach new heights.",
+});
+
+const firstTitle = t({
+  pt: "Maior Alcance",
+  en: "Expand Your Reach",
+});
+
+const firstText = t({
+  pt: "Um site permite que o seu negócio alcance novos clientes além da sua área física. Com uma forte presença online, os seus serviços ou produtos estão acessíveis 24 horas por dia, 7 dias por semana, proporcionando-lhe um público global e um potencial de crescimento ilimitado.",
+  en: "A website allows your business to reach new customers beyond your immediate area. With a strong online presence, your services or products are accessible 24/7, giving you a global audience and limitless growth potential.",
+});
+
+const secondTitle = t({
+  pt: "Disponibilidade 24/7",
+  en: "24/7 Availability",
+});
+
+const secondText = t({
+  pt: "Ao contrário de um estabelecimento físico, um site nunca fecha. Ele permite que potenciais clientes descubram o seu negócio, naveguem pelas suas ofertas ou até mesmo realizar compras a qualquer hora do dia ou da noite.",
+  en: "Unlike a physical establishment, a website never closes. It allows potential customers to discover your business, browse your offerings, and even make inquiries or purchases at any time of the day or night.",
+});
+
+const thirdTitle = t({
+  pt: "Construir Credibilidade",
+  en: "Build Credibility",
+});
+
+const thirdText = t({
+  pt: "Um site profissional estabelece confiança e credibilidade para com o seu público. Ele oferece uma oportunidade de mostrar a sua experiência, compartilhar avaliações de clientes e destacar as suas conquistas, destacando o seu negócio.",
+  en: " A professional website establishes trust and credibility with your audience. It provides an opportunity to showcase your expertise, share customer reviews, and highlight your achievements, making your business stand out.",
+});
+---
+
+<div class="max-w-7xl mx-auto px-8 lg:px-4">
+  <!-- Section Title -->
+  <h2 class="heading">
+    {title}
+    <span class="text-gradient">{titleGradient}</span>
+    {title2}
+    <span class="text-gradient">Website</span>
+  </h2>
+
+  <p class="sub-heading">
+    {subtitle}
+  </p>
+
+  <!-- Cards Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Card 1 -->
+    <div
+      class="p-6 from-zinc-200 z-10 via-zinc-100 to-zinc-400 dark:from-zinc-900 dark:via-zinc-950 dark:to-zinc-800 bg-gradient-to-br rounded-lg shadow-md flex items-center flex-col text-center transition"
+    >
+      <Eye size={50} class="mb-4 icon-color" />
+      <h3 class="text-xl font-semibold text-black/90 dark:text-white/90 mb-2">
+        {firstTitle}
+      </h3>
+      <p class="text-color">
+        {firstText}
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div
+      class="p-6 from-zinc-200 via-zinc-100 to-zinc-400 dark:from-zinc-900 dark:via-zinc-950 dark:to-zinc-800 bg-gradient-to-br rounded-lg shadow-md flex items-center flex-col text-center transition"
+    >
+      <Clock size={50} class="icon-color mb-4" />
+      <h3 class="text-xl font-semibold text-black/90 dark:text-white/90 mb-2">
+        {secondTitle}
+      </h3>
+      <p class="text-color">
+        {secondText}
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div
+      class="p-6 from-zinc-200 via-zinc-100 to-zinc-400 dark:from-zinc-900 dark:via-zinc-950 dark:to-zinc-800 bg-gradient-to-br rounded-lg shadow-md flex items-center flex-col text-center transition"
+    >
+      <BadgeCheck size={50} class="icon-color mb-4" />
+      <h3 class="text-xl font-semibold text-black/90 dark:text-white/90 mb-2">
+        {thirdTitle}
+      </h3>
+      <p class="text-color">
+        {thirdText}
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,65 @@
+---
+import { Image } from "astro:assets";
+import heroImage from "../assets/hero.webp";
+
+import { useTranslations, type Lang } from "../i18n/utils";
+import CTA from "./CTA.astro";
+
+const t = useTranslations(Astro.currentLocale as Lang);
+
+const title = t({
+  pt: "Impulsione o seu negócio com um ",
+  en: "Boost your business with a ",
+});
+
+const titleGradient = t({
+  pt: "website profissional.",
+  en: "professional website.",
+});
+
+const subtitle = t({
+  pt: "Aumente a sua visibilidade online com páginas que convertem visitantes em clientes e geram resultados.",
+  en: "Increase your online visibility with pages that convert visitors into customers and generate results.",
+});
+---
+
+<div
+  class="w-fit lg:translate-x-6 mx-auto px-4 md:px-8 xl:px-0 flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-0"
+>
+  <!-- Left Content -->
+  <div class="flex-1 text-center lg:text-left lg:max-w-[500px]">
+    <h1
+      class="text-4xl md:text-5xl md:text-balance font-bold text-black dark:text-white leading-tight"
+    >
+      {title}
+      <span class="text-gradient">{titleGradient}</span>
+    </h1>
+    <p
+      class="mt-4 text-lg mx-auto text-center lg:text-start max-w-xl lg:max-w-none text-balance lg:text-xl text-black/80 dark:text-white/90"
+    >
+      {subtitle}
+    </p>
+    <CTA />
+  </div>
+
+  <!-- Right Image -->
+  {
+    /* 
+  <div class="flex-1 2xl:absolute 2xl:right-64">
+    <img
+      src={"../src/assets/done2.png"}
+      alt="Mockup de um site profissional"
+      class="w-full max-w-md mx-auto md:max-w-2xl lg:max-w-[840px] md:mx-0"
+    />
+  </div>
+  */
+  }
+  <div class="flex-1 overflow-visible lg:-translate-x-6">
+    <Image
+      draggable="false"
+      src={heroImage}
+      alt="Mockup de um sites em diferentes dispositivos"
+      class="w-full max-w-md mx-auto md:max-w-2xl lg:max-w-[840px] md:mx-0"
+    />
+  </div>
+</div>

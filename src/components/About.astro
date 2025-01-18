@@ -1,0 +1,58 @@
+---
+import CTA from "./CTA.astro";
+import { useTranslations, type Lang } from "../i18n/utils";
+import { Image } from "astro:assets";
+import image from "../assets/about.png";
+
+const t = useTranslations(Astro.currentLocale as Lang);
+
+const title = t({
+  pt: "Pelo Desenvolvimento",
+  en: "For The Development",
+});
+
+const titleGradient = t({
+  pt: "Responsável",
+  en: "Responsible",
+});
+
+const text = t({
+  pt: "Sou o Rodrigo Freitas, sou um especialista em desenvolvimento web e na criação de sites de alta conversão.| Com uma vasta experiência no mundo digital, tenho ajudado negócios e empresas a alcançar os seus objetivos online, com soluções que fazem a diferença.| Tenho um compromisso com a qualidade e a excelência, e estou dedicado a ajudar o seu negócio a crescer e a prosperar.",
+  en: "I'm Rodrigo Freitas, a web development expert and creator of high-conversion websites.| With extensive experience in the digital world, I have helped businesses and companies achieve their online goals with solutions that generate results.| I am committed to quality and excellence, and I am dedicated to helping your business grow and thrive.",
+});
+
+const firstParagraph = text.split("|")[0];
+const secondParagraph = text.split("|")[1];
+const thirdParagraph = text.split("|")[2];
+---
+
+<div
+  class="mx-auto max-w-6xl flex flex-col items-center justify-center gap-4 lg:flex-row lg:gap-16 px-8 lg:px-4 xl:px-0"
+>
+  <div class="relative">
+    <Image
+      loading="lazy"
+      src={image}
+      alt="Rodrigo Freitas' Photo"
+      class="object-center object-contain max-h-[350px] max-w-[350px] sm:max-w-[450px] sm:max-h-[450px] rounded-3xl lg:mb-0 lg:max-h-[450px] lg:max-w-[450px]"
+    />
+  </div>
+  <div
+    class="flex flex-col items-center text-center lg:items-start lg:text-left"
+  >
+    <h2 class="heading !mb-6">
+      <span class="text-gradient">{titleGradient}</span>
+      {title}
+    </h2>
+
+    <p class="max-w-[600px] font-medium text-lg text-left text-color">
+      {firstParagraph}
+      <br class="mb-2" />
+      {secondParagraph}
+      <br class="mb-2" />
+      {thirdParagraph}
+    </p>
+
+    <CTA />
+  </div>
+</div>

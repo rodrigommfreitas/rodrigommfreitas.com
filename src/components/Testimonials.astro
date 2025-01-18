@@ -1,0 +1,105 @@
+---
+import { useTranslations, type Lang } from "../i18n/utils";
+import { Image } from "astro:assets";
+import testimonialImage1 from "../assets/testimonial1.jpg";
+import testimonialImage2 from "../assets/testimonial2.jpg";
+import testimonialImage3 from "../assets/testimonial3.jpg";
+
+const t = useTranslations(Astro.currentLocale as Lang);
+
+const title = t({
+  pt: "Opiniões Dos Meus",
+  en: "Opinions From My",
+});
+
+const titleGradient = t({
+  pt: "Clientes",
+  en: "Clients",
+});
+
+const testimonial1 = t({
+  pt: "Gostei muito do resultado final, ficou incrível e valeu todo o investimento. Estou muito satisfeito com o trabalho que foi feito.",
+  en: "I really liked the final result, it was incredible and worth all the investment. I am very satisfied with the work that was done.",
+});
+
+const testimonial2 = t({
+  pt: "Está tudo perfeito, sem nada a apontar. Para além do que eu tinha em mente, o Rodrigo ajudou com sugestões e dicas valiosas.",
+  en: "Everything is perfect, I have nothing to point out. In addition to what I had in mind, Rodrigo helped with valuable suggestions and tips.",
+});
+
+const testimonial3 = t({
+  pt: "O website superou todas as minhas expectativas! O Rodrigo é um profissional incrível e super atencioso. Recomendo a todos!",
+  en: "The website exceeded my expectations! Rodrigo is an amazing professional and super attentive. I recommend him to everyone!",
+});
+---
+
+<div class="max-w-7xl mx-auto px-8 lg:px-4 xl:px-0">
+  <!-- Section Title -->
+  <h2 class="heading !mb-12">
+    {title}
+    <span class="text-gradient">{titleGradient}</span>
+  </h2>
+
+  <!-- Testimonials Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Testimonial 1 -->
+    <div
+      class="p-6 from-zinc-200 via-zinc-100 to-zinc-300 dark:from-zinc-900 dark:via-zinc-950 dark:to-zinc-800 bg-gradient-to-br rounded-lg shadow-md text-center"
+    >
+      <div class="flex items-center mb-4">
+        <Image
+          loading="lazy"
+          src={testimonialImage1}
+          alt="John Doe"
+          class="w-16 h-16 rounded-full flex-shrink-0"
+        />
+        <h3 class="text-lg font-semibold ml-4 text-black/90 dark:text-white/90">
+          Pedro Almeida
+        </h3>
+      </div>
+      <p class="text-color text-left">
+        "{testimonial1}"
+      </p>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div
+      class="p-6 from-zinc-200 via-zinc-100 to-zinc-300 dark:from-zinc-900 dark:via-zinc-950 dark:to-zinc-800 bg-gradient-to-br rounded-lg shadow-md text-center"
+    >
+      <div class="flex items-center mb-4">
+        <Image
+          loading="lazy"
+          src={testimonialImage2}
+          alt="John Doe"
+          class="w-16 h-16 rounded-full flex-shrink-0"
+        />
+        <h3 class="text-lg font-semibold ml-4 text-black/90 dark:text-white/90">
+          João Ribeiro
+        </h3>
+      </div>
+      <p class="text-color text-left">
+        "{testimonial2}"
+      </p>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div
+      class="p-6 from-zinc-200 via-zinc-100 to-zinc-300 dark:from-zinc-900 dark:via-zinc-950 dark:to-zinc-800 bg-gradient-to-br rounded-lg shadow-md text-center"
+    >
+      <div class="flex items-center mb-4">
+        <Image
+          loading="lazy"
+          src={testimonialImage3}
+          alt="John Doe"
+          class="w-16 h-16 rounded-full flex-shrink-0"
+        />
+        <h3 class="text-lg font-semibold ml-4 text-black/90 dark:text-white/90">
+          Ana Costa
+        </h3>
+      </div>
+      <p class="text-color text-left">
+        "{testimonial3}"
+      </p>
+    </div>
+  </div>
+</div>

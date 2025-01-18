@@ -1,0 +1,203 @@
+---
+import { ChevronLeft, ChevronRight } from "lucide-astro";
+import { useTranslations, type Lang } from "../i18n/utils";
+import { Image } from "astro:assets";
+import projectImage1 from "../assets/jose.webp";
+import projectImage2 from "../assets/onrepair.webp";
+import projectImage3 from "../assets/fashtore.webp";
+
+const t = useTranslations(Astro.currentLocale as Lang);
+
+const title = t({
+  pt: "Projetos",
+  en: "Projects",
+});
+
+const titleGradient = t({
+  pt: "Realizados",
+  en: "Completed",
+});
+
+const subtitle = t({
+  pt: "Confira alguns dos projetos já desenvolvidos para clientes...",
+  en: "Discover some of the projects already developed for our clients...",
+});
+---
+
+<div class="max-w-7xl mx-auto px-4 xl:px-0">
+  <!-- Section Title -->
+  <h2 class="heading">
+    {title}
+    <span class="text-gradient">{titleGradient}</span>
+  </h2>
+
+  <p class="sub-heading !mb-8">
+    {subtitle}
+  </p>
+
+  <div class="relative">
+    <!-- Carousel Wrapper -->
+    <div class="relative overflow-hidden max-w-6xl mx-auto">
+      <!-- Projects -->
+      <div
+        id="carousel"
+        class="flex transition-transform duration-500 ease-in-out mx-auto max-w-6xl"
+      >
+        <!-- Project Card 1 -->
+        <div class="relative w-full md:w-1/3 flex-shrink-0 p-4">
+          <div class="relative overflow-hidden rounded-lg shadow-md group h-64">
+            <div class="h-full overflow-hidden">
+              <div
+                class="h-full transform transition-transform duration-700 ease-in-out"
+              >
+                <Image
+                  loading="lazy"
+                  src={projectImage1}
+                  alt="Project 1"
+                  class="object-cover object-top w-full h-full"
+                />
+              </div>
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full bg-zinc-800 bg-opacity-80 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <h3 class="text-lg font-bold text-white">
+                José Bonito - Luxury Foto
+              </h3>
+              <p class="text-sm text-zinc-200">
+                Site desenvolvido para um fotógrafo profissional.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="relative w-full md:w-1/3 flex-shrink-0 p-4">
+          <div class="relative overflow-hidden rounded-lg shadow-md group h-64">
+            <div class="h-full overflow-hidden">
+              <div
+                class="h-full transform transition-transform duration-700 ease-in-out"
+              >
+                <Image
+                  loading="lazy"
+                  src={projectImage2}
+                  alt="Project 2"
+                  class="object-cover object-top w-full h-full"
+                />
+              </div>
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full bg-zinc-800 bg-opacity-80 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <h3 class="text-lg font-bold text-white">
+                OnRepair - Centro de Reparações
+              </h3>
+              <p class="text-sm text-zinc-200">
+                Site desenvolvido para uma loja de reparações.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more projects as needed -->
+        <div class="relative w-full md:w-1/3 flex-shrink-0 p-4">
+          <div class="relative overflow-hidden rounded-lg shadow-md group h-64">
+            <div class="h-full overflow-hidden">
+              <div
+                class="h-full transform transition-transform duration-700 ease-in-out"
+              >
+                <Image
+                  loading="lazy"
+                  src={projectImage3}
+                  alt="Project 3"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+            </div>
+            <div
+              class="absolute bottom-0 left-0 w-full bg-zinc-800 bg-opacity-70 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <h3 class="text-lg font-bold text-white">Fashtore</h3>
+              <p class="text-sm text-zinc-200">
+                Site desenvolvido para uma loja de roupa.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation Arrows -->
+    <button
+      id="prev"
+      class="absolute left-0 lg:left-4 text-lg top-1/2 transform -translate-y-1/2 bg-zinc-800 text-white flex items-center justify-center rounded-full shadow h-10 w-10 hover:bg-zinc-700 transition"
+    >
+      <ChevronLeft />
+    </button>
+    <button
+      id="next"
+      class="absolute text-lg right-0 lg:right-4 top-1/2 transform -translate-y-1/2 bg-zinc-800 text-white flex items-center justify-center rounded-full h-10 w-10 px-3 shadow hover:bg-zinc-700 transition"
+    >
+      <ChevronRight />
+    </button>
+  </div>
+</div>
+<script>
+  // Carousel
+
+  const carousel = document.getElementById("carousel");
+  const prevButton = document.getElementById("prev");
+  const nextButton = document.getElementById("next");
+
+  let currentIndex = 0;
+  const totalItems = carousel?.children.length || 0;
+
+  function getVisibleItemsCount() {
+    // Get the number of visible items based on screen size
+    const containerWidth = carousel.parentElement.offsetWidth;
+    const itemWidth = carousel.children[0].offsetWidth;
+    return Math.floor(containerWidth / itemWidth);
+  }
+
+  function updateCarousel() {
+    const visibleItems = getVisibleItemsCount();
+
+    // Update the carousel's transform
+    carousel.style.transform = `translateX(-${currentIndex * (100 / visibleItems)}%)`;
+
+    // Disable or enable buttons based on visible items and currentIndex
+    if (currentIndex === 0) {
+      prevButton.disabled = true;
+      prevButton.classList.add("opacity-50", "cursor-not-allowed");
+    } else {
+      prevButton.disabled = false;
+      prevButton.classList.remove("opacity-50", "cursor-not-allowed");
+    }
+
+    if (currentIndex + visibleItems >= totalItems) {
+      nextButton.disabled = true;
+      nextButton.classList.add("opacity-50", "cursor-not-allowed");
+    } else {
+      nextButton.disabled = false;
+      nextButton.classList.remove("opacity-50", "cursor-not-allowed");
+    }
+  }
+
+  // Initial state
+  window.addEventListener("resize", updateCarousel);
+  updateCarousel();
+
+  prevButton?.addEventListener("click", () => {
+    if (currentIndex > 0) {
+      currentIndex = Math.max(currentIndex - 1, 0);
+      updateCarousel();
+    }
+  });
+
+  nextButton?.addEventListener("click", () => {
+    const visibleItems = getVisibleItemsCount();
+    if (currentIndex + visibleItems < totalItems) {
+      currentIndex = Math.min(currentIndex + 1, totalItems - visibleItems);
+      updateCarousel();
+    }
+  });
+</script>

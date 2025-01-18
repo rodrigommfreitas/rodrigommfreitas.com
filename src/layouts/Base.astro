@@ -1,0 +1,73 @@
+---
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.tsx";
+
+import "../styles/global.css";
+
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import {
+  useTranslations,
+  LOCALES,
+  getLocalePaths,
+  type Lang,
+} from "../i18n/utils";
+
+const t = useTranslations(Astro.currentLocale as Lang);
+
+interface Props {
+  title?: string;
+  description?: string;
+  frontmatter?: undefined;
+}
+
+const { title, description } = Astro.props.frontmatter || Astro.props;
+
+const locale = Astro.currentLocale as Lang;
+const localeTitle = title ? `${title} - ${t(SITE_TITLE)}` : t(SITE_TITLE);
+const localeDescription = description || t(SITE_DESCRIPTION);
+---
+
+<html lang={LOCALES[locale].lang || locale} dir={LOCALES[locale].dir || null}>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{localeTitle}</title>
+    <meta name="description" content={localeDescription} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="generator" content={Astro.generator} />
+    {
+      getLocalePaths(Astro.url).map((props) => (
+        <link
+          rel="alternate"
+          hreflang={LOCALES[props.lang].lang || props.lang}
+          href={Astro.site?.origin + props.path}
+        />
+      ))
+    }
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta name="color-scheme" content="light dark" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={localeTitle} />
+    <meta property="og:site_name" content={localeTitle} />
+    <meta property="og:description" content={localeDescription} />
+    <meta property="og:image" content={Astro.site + "ogp.png"} />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:locale" content={LOCALES[locale].lang || locale} />
+  </head>
+
+  <body>
+    <Nav client:load lang={locale} />
+
+    <main>
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>
